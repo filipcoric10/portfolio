@@ -895,6 +895,15 @@ class Component extends DCLogic {
       const speed = parseFloat(strip.getAttribute('data-speed')) || 130;
       let dragging0 = false, dir = 1, lastX = null;
       const isPaused = () => dragging0;
+      const grow = () => {
+        let guard = 0;
+        while (strip.scrollWidth < strip.clientWidth * 2.4 && guard++ < 3) {
+          Array.from(strip.children).forEach((c) => strip.appendChild(c.cloneNode(true)));
+        }
+      };
+      grow();
+      window.addEventListener('load', grow);
+
       if (axis) {
         let dragging = false;
         const seek = (clientX) => {
@@ -912,7 +921,8 @@ class Component extends DCLogic {
       const step = (now) => {
         const dt = Math.min((now - prev) / 1000, 0.05);
         prev = now;
-        const half = strip.scrollWidth / 2 || 1;
+        const maxScroll = strip.scrollWidth - strip.clientWidth;
+        const half = Math.min(strip.scrollWidth / 2, maxScroll) || 1;
         if (!isPaused()) {
           strip.scrollLeft += speed * dt;
           if (strip.scrollLeft >= half) strip.scrollLeft -= half;
