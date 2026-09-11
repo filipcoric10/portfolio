@@ -42,8 +42,8 @@
   [data-cap="1"] { opacity: 0; z-index: 5; transition: opacity 0.28s ease; }
   #honey-jar::part(ring), #honey-jar::part(empty) { display: none; }
   #honey-jar::part(frame) { background: transparent; }
-  body[data-bee-on] section[data-screen-label="Contact"], body[data-bee-on] section[data-screen-label="Contact"] * { cursor: none; }
-  body[data-book-open] section[data-screen-label="Contact"], body[data-book-open] section[data-screen-label="Contact"] a, [data-book="1"], [data-book="1"] * { cursor: auto; }
+  body[data-bee-on] section[data-screen-label="Contact"], body[data-bee-on] section[data-screen-label="Contact"] * { cursor: none !important; }
+  body[data-book-open] section[data-screen-label="Contact"], body[data-book-open] section[data-screen-label="Contact"] a, body[data-book-open] section[data-screen-label="Contact"] *, [data-book="1"], [data-book="1"] * { cursor: auto !important; }
 
   [data-bee-cursor="1"] { transform: translate3d(var(--bee-x, -200px), var(--bee-y, -200px), 0) rotate(var(--bee-r, -14deg)) !important; }
   body[data-bee-on] [data-bee-cursor="1"] { opacity: 1 !important; }
@@ -724,9 +724,9 @@
       <p style="margin: clamp(16px, 2.1vw, 32px) 0 0; max-width: 42ch; font-family: var(--font-body); font-size: clamp(0.9rem, 1.24vw, 1.24rem); line-height: 1.5; text-shadow: var(--hero-glow-sm, none); color: var(--hero-ink, var(--color-text)); opacity: 0; animation: bs-rise 0.7s cubic-bezier(.2,.7,.3,1) 0.42s both;"><span style="opacity: 0.78;">Like a bee, always busy building something valuable. Creating websites and apps. Turning ideas into digital products.</span></p>
     </div>
 
-    <div data-photo-panel="1" style="flex: 0 0 auto; align-self: stretch; position: relative; overflow: hidden; width: calc(clamp(26px, min(7.4vw, 13.6vh), 240px) * 6 + clamp(6px, 0.8vw, 12px) * 4.5); margin: calc(-1 * clamp(16px, 2.4vw, 34px)) calc(-1 * clamp(12px, 1.6vw, 28px)) calc(-1 * clamp(16px, 2.4vw, 34px)) auto;">
+    <div data-photo-panel="1" style="flex: 0 0 auto; align-self: stretch; position: relative; overflow: hidden; width: calc(clamp(26px, min(7.4vw, 13.6vh), 240px) * 7 + clamp(6px, 0.8vw, 12px) * 5.5); margin: calc(-1 * clamp(16px, 2.4vw, 34px)) calc(-1 * clamp(12px, 1.6vw, 28px)) calc(-1 * clamp(16px, 2.4vw, 34px)) auto;">
       <div data-photo-gap="1" style="position: absolute; inset: 0; background: var(--hero-gap, transparent);"></div>
-      <div data-photo-img="1" role="img" aria-label="Portrait of Filip Ćorić" style="position: absolute; inset: 0; background-image: url('uploads/opt/Subject%203.webp'); background-repeat: no-repeat; background-position: right 0 bottom 0; background-size: contain;"></div>
+      <div data-photo-img="1" role="img" aria-label="Portrait of Filip Ćorić" style="position: absolute; inset: 0; opacity: 0.88; background-image: url('uploads/opt/Subject%203.webp'); background-repeat: no-repeat; background-position: right 0 bottom 0; background-size: contain;"></div>
       <div data-photo-anchor="1" style="position: absolute; top: calc((clamp(26px, min(7.4vw, 13.6vh), 240px) * -0.866 - clamp(6px, 0.8vw, 12px) * 0.866) * 1.35); right: calc(clamp(26px, min(7.4vw, 13.6vh), 240px) * -0.5 - clamp(6px, 0.8vw, 12px)); display: flex; gap: clamp(6px, 0.8vw, 12px); visibility: hidden; pointer-events: none;">
         <div data-hero-cell="1" style="flex: 0 0 auto; width: clamp(26px, min(7.4vw, 13.6vh), 240px); aspect-ratio: 0.866;"></div>
       </div>
@@ -837,7 +837,7 @@
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: clamp(20px, 2.6vw, 44px); align-items: start;">
           <div style="display: flex; flex-direction: column; align-items: flex-start;">
             <span aria-hidden="true" style="display: block; width: clamp(11px, 0.95vw, 15px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); margin: 0 0 clamp(8px, 0.9vw, 13px);"></span>
-            <div style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.9rem, 3.4vw, 3.4rem); line-height: 0.9; letter-spacing: -0.03em; color: var(--hero-touch, #b8801f); text-shadow: var(--hero-glow-sm, none);">24-48</div>
+            <div style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.9rem, 3.4vw, 3.4rem); line-height: 0.9; letter-spacing: -0.03em; color: var(--hero-touch, #b8801f); text-shadow: var(--hero-glow-sm, none);">24 - 48</div>
             <div style="margin-top: clamp(7px, 0.8vw, 12px); font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.6rem, 0.82vw, 0.82rem); letter-spacing: 0.2em; text-transform: uppercase; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">hours</div>
             <p style="margin: clamp(6px, 0.7vw, 10px) 0 0; max-width: 22ch; font-size: clamp(0.84rem, 1.02vw, 1.04rem); line-height: 1.45; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">A straightforward website designed, built and live - hosting and domain included.</p>
           </div>
@@ -1001,8 +1001,7 @@
             <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
               <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(2.1rem, 4.6vw, 4.4rem); line-height: 1; letter-spacing: -0.04em; color: var(--hero-stepnum, #5f3a06); text-shadow: var(--hero-glow-sm, none);">01</span>
             </div>
-            <span aria-hidden="true" style="position: absolute; left: 50%; bottom: clamp(-7px, -0.6vw, -5px); transform: translateX(-50%); width: clamp(13px, 1.1vw, 17px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f);"></span>
-          </div>
+            </div>
           <span style="margin-top: clamp(16px, 1.8vw, 28px); font-family: var(--font-heading); font-weight: 600; font-size: clamp(1rem, 1.46vw, 1.52rem); line-height: 1.1; letter-spacing: -0.014em; text-align: center; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">Call &amp; brief</span>
           <span style="margin-top: 0.34em; font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-size: clamp(0.72rem, 0.98vw, 1rem); text-align: center; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">30-45 min</span>
           <p style="margin: clamp(10px, 1.1vw, 16px) 0 0; max-width: 24ch; font-size: clamp(0.8rem, 1.02vw, 1.02rem); line-height: 1.5; text-align: center; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">We talk through what the site has to do, who it is for and what you already have.</p>
@@ -1013,8 +1012,7 @@
             <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
               <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(2.1rem, 4.6vw, 4.4rem); line-height: 1; letter-spacing: -0.04em; color: var(--hero-stepnum, #5f3a06); text-shadow: var(--hero-glow-sm, none);">02</span>
             </div>
-            <span aria-hidden="true" style="position: absolute; left: 50%; bottom: clamp(-7px, -0.6vw, -5px); transform: translateX(-50%); width: clamp(13px, 1.1vw, 17px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f);"></span>
-          </div>
+            </div>
           <span style="margin-top: clamp(16px, 1.8vw, 28px); font-family: var(--font-heading); font-weight: 600; font-size: clamp(1rem, 1.46vw, 1.52rem); line-height: 1.1; letter-spacing: -0.014em; text-align: center; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">Design</span>
           <span style="margin-top: 0.34em; font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-size: clamp(0.72rem, 0.98vw, 1rem); text-align: center; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">in Figma</span>
           <p style="margin: clamp(10px, 1.1vw, 16px) 0 0; max-width: 24ch; font-size: clamp(0.8rem, 1.02vw, 1.02rem); line-height: 1.5; text-align: center; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">I send a link with the direction. Nothing gets built until you approve it.</p>
@@ -1025,8 +1023,7 @@
             <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
               <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(2.1rem, 4.6vw, 4.4rem); line-height: 1; letter-spacing: -0.04em; color: var(--hero-stepnum, #5f3a06); text-shadow: var(--hero-glow-sm, none);">03</span>
             </div>
-            <span aria-hidden="true" style="position: absolute; left: 50%; bottom: clamp(-7px, -0.6vw, -5px); transform: translateX(-50%); width: clamp(13px, 1.1vw, 17px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f);"></span>
-          </div>
+            </div>
           <span style="margin-top: clamp(16px, 1.8vw, 28px); font-family: var(--font-heading); font-weight: 600; font-size: clamp(1rem, 1.46vw, 1.52rem); line-height: 1.1; letter-spacing: -0.014em; text-align: center; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">Build</span>
           <span style="margin-top: 0.34em; font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-size: clamp(0.72rem, 0.98vw, 1rem); text-align: center; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">site or app</span>
           <p style="margin: clamp(10px, 1.1vw, 16px) 0 0; max-width: 24ch; font-size: clamp(0.8rem, 1.02vw, 1.02rem); line-height: 1.5; text-align: center; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">Sites I build myself. Apps are built out with the developer I work with.</p>
@@ -1037,8 +1034,7 @@
             <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
               <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(2.1rem, 4.6vw, 4.4rem); line-height: 1; letter-spacing: -0.04em; color: var(--hero-stepnum, #5f3a06); text-shadow: var(--hero-glow-sm, none);">04</span>
             </div>
-            <span aria-hidden="true" style="position: absolute; left: 50%; bottom: clamp(-7px, -0.6vw, -5px); transform: translateX(-50%); width: clamp(13px, 1.1vw, 17px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f);"></span>
-          </div>
+            </div>
           <span style="margin-top: clamp(16px, 1.8vw, 28px); font-family: var(--font-heading); font-weight: 600; font-size: clamp(1rem, 1.46vw, 1.52rem); line-height: 1.1; letter-spacing: -0.014em; text-align: center; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">Launch</span>
           <span style="margin-top: 0.34em; font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-size: clamp(0.72rem, 0.98vw, 1rem); text-align: center; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">hosting &amp; domain</span>
           <p style="margin: clamp(10px, 1.1vw, 16px) 0 0; max-width: 24ch; font-size: clamp(0.8rem, 1.02vw, 1.02rem); line-height: 1.5; text-align: center; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">The finished site goes live. You hand over text, photos if you have them, and domain access.</p>
@@ -1274,9 +1270,9 @@
       <div style="position: relative; width: min(560px, 100%); max-height: 92vh; overflow: hidden; display: flex; flex-direction: column; box-sizing: border-box; padding: clamp(18px, 2.2vw, 34px); background: var(--hero-paper, #f3f2f2); color: var(--hero-sub, #201e1d); font-family: var(--font-body); box-shadow: 0 30px 70px rgba(24,20,14,0.35);">
         <button type="button" data-book-close="1" aria-label="Close" style="position: absolute; top: clamp(12px, 1.6vw, 22px); right: clamp(12px, 1.6vw, 22px); appearance: none; border: 0; background: none; cursor: pointer; font-family: var(--font-heading); font-size: 1.5rem; line-height: 1; color: var(--hero-sub, #201e1d);">×</button>
         <div data-cal-scroll="1" style="flex: 1 1 auto; min-height: 0; overflow: auto;">
-        <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; margin-bottom: clamp(16px, 2vw, 26px);">
+        <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: clamp(12px, 1.4vw, 20px); margin-bottom: clamp(16px, 2vw, 26px);">
           <h3 style="margin: 0; font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.3rem, 2.4vw, 2.1rem); letter-spacing: -0.02em; color: var(--hero-ink, #5f3a06);">Book a call</h3>
-          <span style="font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-size: clamp(0.9rem, 1.2vw, 1.15rem); color: var(--hero-sub, #201e1d);">30 minutes</span>
+          <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.1rem, 1.9vw, 1.7rem); letter-spacing: -0.015em; color: var(--hero-touch, #b8801f);">30 minutes</span>
         </div>
         <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: clamp(10px, 1.4vw, 18px);">
           <button type="button" data-cal-prev="1" aria-label="Previous month" style="appearance: none; border: 0; background: none; cursor: pointer; font-family: var(--font-heading); font-size: 1.1rem; color: var(--hero-ink, #5f3a06);">←</button>
@@ -1489,6 +1485,7 @@ class Component extends DCLogic {
         setP('Size', sizes.join(', '));
         setP('Repeat', reps.join(', '));
         setP('Position', poss.join(', '));
+
       });
     };
     const fitCaps = () => {
