@@ -726,7 +726,7 @@
 
     <div data-photo-panel="1" style="flex: 0 0 auto; align-self: stretch; position: relative; overflow: hidden; width: calc(clamp(26px, min(7.4vw, 13.6vh), 240px) * 7 + clamp(6px, 0.8vw, 12px) * 5.5); margin: calc(-1 * clamp(16px, 2.4vw, 34px)) calc(-1 * clamp(12px, 1.6vw, 28px)) calc(-1 * clamp(16px, 2.4vw, 34px)) auto;">
       <div data-photo-gap="1" style="position: absolute; inset: 0; background: var(--hero-gap, transparent);"></div>
-      <div data-photo-img="1" role="img" aria-label="Portrait of Filip Ćorić" style="position: absolute; inset: 0; opacity: 0.88; background-image: url('uploads/opt/Subject%203.webp'); background-repeat: no-repeat; background-position: right 0 bottom 0; background-size: contain;"></div>
+      <div data-photo-img="1" role="img" aria-label="Portrait of Filip Ćorić" style="position: absolute; inset: 0; opacity: var(--photo-op, 0.88); background-image: url('uploads/opt/Subject%203.webp'); background-repeat: no-repeat; background-position: right 0 bottom 0; background-size: contain;"></div>
       <div data-photo-anchor="1" style="position: absolute; top: calc((clamp(26px, min(7.4vw, 13.6vh), 240px) * -0.866 - clamp(6px, 0.8vw, 12px) * 0.866) * 1.35); right: calc(clamp(26px, min(7.4vw, 13.6vh), 240px) * -0.5 - clamp(6px, 0.8vw, 12px)); display: flex; gap: clamp(6px, 0.8vw, 12px); visibility: hidden; pointer-events: none;">
         <div data-hero-cell="1" style="flex: 0 0 auto; width: clamp(26px, min(7.4vw, 13.6vh), 240px); aspect-ratio: 0.866;"></div>
       </div>
@@ -1803,11 +1803,11 @@ class Component extends DCLogic {
           '--hero-stepnum': '#201e1d',
           '--hero-sub': '#f6ecd6',
           '--hero-gap': '#b8801f',
+          '--photo-op': '1',
           '--hx-fill': '#b8801f',
           '--hx-op': '1',
           '--hero-glow': '2px 0 0 #221f1a, -2px 0 0 #221f1a, 0 2px 0 #221f1a, 0 -2px 0 #221f1a, 1.5px 1.5px 0 #221f1a, -1.5px 1.5px 0 #221f1a, 1.5px -1.5px 0 #221f1a, -1.5px -1.5px 0 #221f1a',
           '--hero-glow-sm': '1.5px 0 0 #221f1a, -1.5px 0 0 #221f1a, 0 1.5px 0 #221f1a, 0 -1.5px 0 #221f1a, 1px 1px 0 #221f1a, -1px 1px 0 #221f1a, 1px -1px 0 #221f1a, -1px -1px 0 #221f1a',
-          '--hero-rim': 'clamp(2px, 0.42vw, 7px)',
           '--hero-ring': '#f4e3bd',
           '--hero-ring-2': 'rgba(244,227,189,0.45)',
           '--color-neutral-200': '#2e2a24'
