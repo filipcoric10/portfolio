@@ -836,19 +836,16 @@
         <p style="margin: clamp(14px, 1.6vw, 24px) 0 clamp(22px, 2.6vw, 40px); font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.5rem, 3.4vw, 3.2rem); line-height: 1.02; letter-spacing: -0.028em; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow, 0 1px 0 rgba(243,242,242,0.85), 0 0 6px rgba(243,242,242,0.7)); text-wrap: pretty;">Your idea, live on the web in <span style="font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-weight: 500; color: var(--hero-touch, #b8801f);">days</span>.</p>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: clamp(20px, 2.6vw, 44px); align-items: start;">
           <div style="display: flex; flex-direction: column; align-items: flex-start;">
-            <span aria-hidden="true" style="display: block; width: clamp(11px, 0.95vw, 15px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); margin: 0 0 clamp(8px, 0.9vw, 13px);"></span>
             <div style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.9rem, 3.4vw, 3.4rem); line-height: 0.9; letter-spacing: -0.03em; color: var(--hero-touch, #b8801f); text-shadow: var(--hero-glow-sm, none);">24 - 48</div>
             <div style="margin-top: clamp(7px, 0.8vw, 12px); font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.6rem, 0.82vw, 0.82rem); letter-spacing: 0.2em; text-transform: uppercase; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">hours</div>
             <p style="margin: clamp(6px, 0.7vw, 10px) 0 0; max-width: 22ch; font-size: clamp(0.84rem, 1.02vw, 1.04rem); line-height: 1.45; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">A straightforward website designed, built and live - hosting and domain included.</p>
           </div>
           <div style="display: flex; flex-direction: column; align-items: flex-start;">
-            <span aria-hidden="true" style="display: block; width: clamp(11px, 0.95vw, 15px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); margin: 0 0 clamp(8px, 0.9vw, 13px);"></span>
             <div style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.9rem, 3.4vw, 3.4rem); line-height: 0.9; letter-spacing: -0.03em; color: var(--hero-touch, #b8801f); text-shadow: var(--hero-glow-sm, none);">1-2</div>
             <div style="margin-top: clamp(7px, 0.8vw, 12px); font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.6rem, 0.82vw, 0.82rem); letter-spacing: 0.2em; text-transform: uppercase; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">months</div>
             <p style="margin: clamp(6px, 0.7vw, 10px) 0 0; max-width: 22ch; font-size: clamp(0.84rem, 1.02vw, 1.04rem); line-height: 1.45; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">An app designed end to end, then built out with the developer I work with.</p>
           </div>
           <div style="display: flex; flex-direction: column; align-items: flex-start;">
-            <span aria-hidden="true" style="display: block; width: clamp(11px, 0.95vw, 15px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); margin: 0 0 clamp(8px, 0.9vw, 13px);"></span>
             <div style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.9rem, 3.4vw, 3.4rem); line-height: 0.9; letter-spacing: -0.03em; color: var(--hero-touch, #b8801f); text-shadow: var(--hero-glow-sm, none);">100%</div>
             <div style="margin-top: clamp(7px, 0.8vw, 12px); font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.6rem, 0.82vw, 0.82rem); letter-spacing: 0.2em; text-transform: uppercase; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">remote</div>
             <p style="margin: clamp(6px, 0.7vw, 10px) 0 0; max-width: 22ch; font-size: clamp(0.84rem, 1.02vw, 1.04rem); line-height: 1.45; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">Freelance, working with clients anywhere. You stay in the loop by call.</p>
@@ -1453,30 +1450,32 @@ class Component extends DCLogic {
           const boxW = el.getBoundingClientRect().width || (panel.width - L);
           const RATIO = 1157 / 882, EYE_Y = 0.185, EYE_X = 0.51;
           const P = panel.height, BW = panel.width - L;
-          const maxH = Math.min(P - off * 0.4, boxW * RATIO);
+          const M = Math.max(6, Math.min(pitchX * 0.14, 18));
+          const maxH = Math.min(P - 2 * M, (BW - M) * RATIO);
           let best = null;
-          for (let shrink = 0; shrink <= Math.min(pitchY * 1.1, maxH * 0.25); shrink += 1) {
+          for (let shrink = 0; shrink <= Math.min(pitchY * 0.45, maxH * 0.1); shrink += 1) {
             const ih = maxH - shrink, iw = ih / RATIO;
-            const rowNear = (P - off - 0.815 * ih - py) / pitchY;
+            const gT = (P - ih) / 2;
+            const rowNear = (P - off - gT - 0.815 * ih - py) / pitchY;
             for (const r of [Math.round(rowNear), Math.floor(rowNear), Math.ceil(rowNear)]) {
               const cellY = py + r * pitchY;
-              const bOff = P - off - cellY - 0.815 * ih - pitchY * 0.5;
-              if (bOff < 0 || bOff > P - off - ih + 0.5) continue;
+              const bOff = P - off - cellY - 0.815 * ih;
+              if (bOff < -0.5 || bOff > P - off - ih + 0.5) continue;
               const baseX = px - L + ((((r % 2) + 2) % 2 === 1) ? pitchX / 2 : 0);
-              const wantR = (k) => BW - (baseX + k * pitchX) - (1 - EYE_X) * iw + pitchX * 0.5;
+              const wantR = (k) => BW - (baseX + k * pitchX) - (1 - EYE_X) * iw;
               let rOff = null;
               for (let k = -40; k <= 40; k++) {
                 const cand = wantR(k);
                 if (cand < -0.5 || cand > BW - iw + 0.5) continue;
-                if (rOff === null || Math.abs(cand - off) < Math.abs(rOff - off)) rOff = cand;
+                if (rOff === null || Math.abs(cand - gT) < Math.abs(rOff - gT)) rOff = cand;
               }
               if (rOff === null) continue;
-              best = { ih: ih, bOff: bOff, rOff: Math.max(0, rOff) };
+              best = { ih: ih, bOff: Math.max(0, bOff), rOff: Math.max(0, rOff) };
               break;
             }
             if (best) break;
           }
-          if (!best) { const g0 = (P - maxH) / 2; best = { ih: maxH, bOff: Math.max(0, g0 - off), rOff: off }; }
+          if (!best) { const g0 = (P - maxH) / 2; best = { ih: maxH, bOff: Math.max(0, g0 - off), rOff: g0 }; }
           const iw2 = best.ih / RATIO;
           const imgTop = (P - off) - best.bOff - best.ih;
           const solidTo = imgTop + best.ih * 0.54, fadeTo = imgTop + best.ih * 0.76;
