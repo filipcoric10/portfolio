@@ -1445,42 +1445,18 @@ class Component extends DCLogic {
         }
         if (el === imgEl) {
           const lowest = poss.reduce((m, p) => Math.max(m, parseFloat(p.split(' ')[1]) + cellH), -Infinity);
-          const off = Math.max(0, panel.height - lowest);
-          el.style.bottom = off.toFixed(2) + 'px';
+          el.style.bottom = '0px';
           const boxW = el.getBoundingClientRect().width || (panel.width - L);
-          const RATIO = 1157 / 882, EYE_Y = 0.185, EYE_X = 0.51;
+          const RATIO = 1157 / 882;
           const P = panel.height, BW = panel.width - L;
-          const M = Math.max(6, Math.min(pitchX * 0.14, 18));
-          const maxH = Math.min(P - 2 * M, (BW - M) * RATIO);
-          let best = null;
-          for (let shrink = 0; shrink <= Math.min(pitchY * 0.45, maxH * 0.1); shrink += 1) {
-            const ih = maxH - shrink, iw = ih / RATIO;
-            const gT = (P - ih) / 2;
-            const rowNear = (P - off - gT - 0.815 * ih - py) / pitchY;
-            for (const r of [Math.round(rowNear), Math.floor(rowNear), Math.ceil(rowNear)]) {
-              const cellY = py + r * pitchY;
-              const bOff = P - off - cellY - 0.815 * ih;
-              if (bOff < -0.5 || bOff > P - off - ih + 0.5) continue;
-              const baseX = px - L + ((((r % 2) + 2) % 2 === 1) ? pitchX / 2 : 0);
-              const wantR = (k) => BW - (baseX + k * pitchX) - (1 - EYE_X) * iw;
-              let rOff = null;
-              for (let k = -40; k <= 40; k++) {
-                const cand = wantR(k);
-                if (cand < -0.5 || cand > BW - iw + 0.5) continue;
-                if (rOff === null || Math.abs(cand - gT) < Math.abs(rOff - gT)) rOff = cand;
-              }
-              if (rOff === null) continue;
-              best = { ih: ih, bOff: Math.max(0, bOff), rOff: Math.max(0, rOff) };
-              break;
-            }
-            if (best) break;
-          }
-          if (!best) { const g0 = (P - maxH) / 2; best = { ih: maxH, bOff: Math.max(0, g0 - off), rOff: g0 }; }
+          const M = Math.max(24, Math.min(pitchY * 0.34, 46));
+          const ih0 = Math.min(P - 2 * M, (BW - 2 * M) * RATIO);
+          const best = { ih: ih0, bOff: (P - ih0) / 2, rOff: M };
           const iw2 = best.ih / RATIO;
-          const imgTop = (P - off) - best.bOff - best.ih;
+          const imgTop = P - best.bOff - best.ih;
           const solidTo = imgTop + best.ih * 0.54, fadeTo = imgTop + best.ih * 0.76;
           imgs.push('linear-gradient(to bottom, #000 0px, #000 ' + solidTo.toFixed(1) + 'px, rgba(0,0,0,0.45) ' + ((solidTo + fadeTo) / 2).toFixed(1) + 'px, rgba(0,0,0,0) ' + fadeTo.toFixed(1) + 'px)');
-          sizes.push('100% ' + (P - off).toFixed(2) + 'px');
+          sizes.push('100% ' + P.toFixed(2) + 'px');
           reps.push('no-repeat');
           poss.push('0px 0px');
           el.style.backgroundSize = 'auto ' + best.ih.toFixed(2) + 'px';
