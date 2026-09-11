@@ -1,8 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Filip Ćorić — UI/UX &amp; Web Designer</title>
+<meta name="description" content="UI/UX and web designer. I design and build websites and mobile apps for small businesses and clubs. See the work and get in touch.">
+<meta name="author" content="Filip Ćorić">
+<link rel="canonical" href="https://filipcoric10.github.io/portfolio/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Filip Ćorić">
+<meta property="og:title" content="Filip Ćorić — UI/UX &amp; Web Designer">
+<meta property="og:description" content="I design the part your customers can actually touch. Websites and mobile apps, from idea to delivery.">
+<meta property="og:url" content="https://filipcoric10.github.io/portfolio/">
+<meta property="og:image" content="https://filipcoric10.github.io/portfolio/uploads/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Filip Ćorić portfolio — UI/UX and web design">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Filip Ćorić — UI/UX &amp; Web Designer">
+<meta name="twitter:description" content="Websites and mobile apps, from idea to delivery.">
+<meta name="twitter:image" content="https://filipcoric10.github.io/portfolio/uploads/og-cover.jpg">
+<meta name="twitter:image:alt" content="Filip Ćorić portfolio — UI/UX and web design">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#221f1a">
 <script src="support.js"></script>
 </head>
 <body>
@@ -11,11 +34,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="_ds/broadsheet-b7a92d10-7ef8-4dfc-8e7b-cb9f53cd8692/styles.css">
 <script src="_ds/broadsheet-b7a92d10-7ef8-4dfc-8e7b-cb9f53cd8692/_ds_bundle.js"></script>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,600&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,600&amp;display=swap">
 <script src="image-slot.js"></script>
 <style>
   html, body { margin: 0; padding: 0; background: var(--color-bg); }
+  [data-cap="1"] { opacity: 0; z-index: 5; transition: opacity 0.28s ease; }
+  #honey-jar::part(ring), #honey-jar::part(empty) { display: none; }
+  #honey-jar::part(frame) { background: transparent; }
+  body[data-bee-on] section[data-screen-label="Contact"], body[data-bee-on] section[data-screen-label="Contact"] * { cursor: none; }
+  body[data-book-open] section[data-screen-label="Contact"], body[data-book-open] section[data-screen-label="Contact"] a, [data-book="1"], [data-book="1"] * { cursor: auto; }
+
+  [data-bee-cursor="1"] { transform: translate3d(var(--bee-x, -200px), var(--bee-y, -200px), 0) rotate(var(--bee-r, -14deg)) !important; }
+  body[data-bee-on] [data-bee-cursor="1"] { opacity: 1 !important; }
+  @media (hover: none) { [data-bee-cursor="1"] { display: none !important; } }
+  [data-cap-host="1"]:hover [data-cap="1"], [data-cap-host="1"]:focus-visible [data-cap="1"] { opacity: 1; }
+  @media (hover: none) { [data-cap="1"] { opacity: 1; } }
+  @media (max-width: 900px) {
+    [data-hero-h1="1"] { font-size: clamp(1.45rem, 6.2vw, 3.1rem) !important; max-width: 16ch !important; }
+    [data-photo-panel="1"] { width: calc(clamp(26px, min(7.4vw, 13.6vh), 240px) * 4 + clamp(6px, 0.8vw, 12px) * 3.5) !important; }
+  }
+  @media (max-width: 900px) {
+    [data-process-grid="1"] { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+    [data-process-grid="1"] figure { margin-top: 0 !important; }
+    section[data-screen-label="Testimonials"] [data-hero-copy="1"][style*="grid-template-columns"] { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  }
+  @media (max-width: 620px) {
+    [data-faq-grid="1"] { grid-template-columns: minmax(0, 1fr) !important; }
+    [data-included-grid="1"] { grid-template-columns: minmax(0, 1fr) !important; }
+    [data-process-grid="1"] { grid-template-columns: minmax(0, 1fr) !important; max-width: 34ch; }
+    section[data-screen-label="Testimonials"] [data-hero-copy="1"][style*="grid-template-columns"] { grid-template-columns: minmax(0, 1fr) !important; }
+    [data-hero-h1="1"] { font-size: clamp(1.3rem, 7vw, 2.2rem) !important; max-width: 13ch !important; }
+    [data-hero-copy="1"] p { font-size: 0.86rem !important; line-height: 1.45 !important; }
+    section[data-screen-label="Websites"], section[data-screen-label="Mobile apps"] { height: auto !important; max-height: none !important; min-height: 78vh !important; padding-top: clamp(56px, 16vw, 96px) !important; }
+  }
   a { color: var(--color-accent-700); text-decoration: none; }
   a:hover { color: var(--color-accent-2); }
   @keyframes bs-press {
@@ -667,22 +719,20 @@
         <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.72rem, 1.06vw, 1.02rem); letter-spacing: 0.19em; text-transform: uppercase; color: var(--hero-touch, #b8801f); opacity: 0; animation: bs-rise 0.7s cubic-bezier(.2,.7,.3,1) 0.12s both;">Filip Ćorić</span>
         <span style="font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-size: clamp(0.78rem, 1.12vw, 1.08rem); letter-spacing: 0.01em; opacity: 0; color: var(--hero-ink, var(--color-text)); animation: bs-rise 0.7s cubic-bezier(.2,.7,.3,1) 0.26s both;"><span style="opacity: 0.72;">UI/UX Designer &amp; Web Designer</span></span>
       </div>
-      <h1 style="margin: 0; font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.5rem, 4.8vw, 6rem); line-height: 0.98; letter-spacing: -0.022em; text-wrap: pretty; max-width: 24ch; text-shadow: var(--hero-glow, none);">I design the part your customers can<br /><span style="white-space: nowrap;">actually </span><span style="position: relative; display: inline-block; white-space: nowrap; cursor: pointer; animation: bs-press {{ loopDur }} cubic-bezier(.3,.7,.3,1) infinite; will-change: transform;" onClick="{{ onToggleTheme }}" onPointerDown="{{ onPress }}" onPointerUp="{{ onRelease }}" onPointerLeave="{{ onRelease }}"><span style="position: absolute; inset: -0.12em -0.16em; border: 2px solid var(--hero-ring, var(--color-accent)); border-radius: 999px; animation: bs-ripple {{ loopDur }} cubic-bezier(.2,.8,.3,1) infinite; pointer-events: none;"></span><span style="position: absolute; inset: -0.12em -0.16em; border: 2px solid var(--hero-ring-2, var(--color-accent-300)); border-radius: 999px; animation: bs-ripple {{ loopDur }} cubic-bezier(.2,.8,.3,1) infinite; animation-delay: 0.16s; pointer-events: none;"></span><span style="position: relative; color: var(--hero-touch, #b8801f); transition: color 0.55s ease; font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-weight: 500; letter-spacing: 0.005em; padding-right: 0.03em;">touch</span><span style="position: absolute; left: 0; bottom: -0.28em; width: 1.02em; height: 1.02em; margin-left: -0.78em; opacity: 0; offset-path: path('M -20 320 C 66 252 -86 196 -22 130 C 6 92 -12 46 24 10'); offset-rotate: auto; offset-anchor: 50% 50%; animation: bs-path {{ loopDur }} cubic-bezier(.45,.05,.55,.95) infinite; pointer-events: none; z-index: 3; will-change: offset-distance; filter: drop-shadow(0 2px 3px rgba(32,30,29,0.22));"><svg viewBox="0 0 76 48" style="width: 100%; height: 100%; display: block; overflow: visible;"><g><path d="M47 17 C37 5 18 0 11 6 C6 11 24 19 43 20 Z" fill="#e6edf2" stroke="#4a423d" stroke-width="0.8" style="transform-origin: 47px 19px; animation: bs-wing 0.13s ease-in-out infinite;"></path><path d="M49 19 C41 10 25 6 20 10 C16 14 32 21 46 22 Z" fill="#d9e3ea" stroke="#5a5049" stroke-width="0.7" style="transform-origin: 49px 21px; animation: bs-wing 0.13s ease-in-out infinite; animation-delay: 0.04s;"></path></g><path d="M45 32 L40 44 M51 33 L50 45 M57 31 L60 42" stroke="#2b2320" stroke-width="1.7" stroke-linecap="round"></path><path d="M12 25 C12 17 21 11 31 11 C40 11 46 17 46 25 C46 33 39 39 30 39 C20 39 12 33 12 25 Z" fill="#c2872a"></path><path d="M18 13.5 C15.5 20 15.2 30.5 17.6 36.6 C19 37.4 20.5 38 22.1 38.4 C19.4 32 19.6 20.6 22.4 12.9 C20.9 13 19.4 13.2 18 13.5 Z" fill="#2b2320"></path><path d="M28 11.2 C25.6 18 25.4 31 28 38.9 C29.5 39 31 38.9 32.4 38.6 C29.8 30.8 29.9 18 32.4 11.4 C31 11.2 29.5 11.1 28 11.2 Z" fill="#2b2320"></path><path d="M38.6 13.2 C36.6 19.4 36.4 30.6 38.6 36.6 C39.9 35.8 41 34.8 41.9 33.6 C40.4 28.4 40.5 21.4 42 16.2 C41.1 15 40 13.9 38.6 13.2 Z" fill="#2b2320"></path><path d="M12.4 22 C8 20.4 4 19 1 18.6 C3.4 20.8 7 23.4 11 25.2 Z" fill="#2b2320"></path><ellipse cx="52" cy="25" rx="9" ry="8.4" fill="#6f4d24"></ellipse><g stroke="#8f6a33" stroke-width="1.3" stroke-linecap="round"><path d="M46 18.5 L44.6 16.4"></path><path d="M52 16.6 L52 14.2"></path><path d="M57.6 18.6 L59.2 16.6"></path><path d="M45.4 31 L43.4 32.6"></path><path d="M58 31.2 L60 32.8"></path></g><circle cx="63.5" cy="24" r="6.6" fill="#241d1a"></circle><ellipse cx="66" cy="22.6" rx="2.5" ry="3.1" fill="#4e433c"></ellipse><path d="M66.5 18 C69.5 13.5 72 11 74.5 10 M62.5 17.6 C63.5 13 64.5 10.6 65.5 8.6" stroke="#241d1a" stroke-width="1.6" stroke-linecap="round" fill="none"></path></svg></span></span>.</h1>
-      <p style="margin: clamp(16px, 2.1vw, 32px) 0 0; max-width: 42ch; font-family: var(--font-body); font-size: clamp(0.9rem, 1.24vw, 1.24rem); line-height: 1.5; text-shadow: var(--hero-glow-sm, none); color: var(--hero-ink, var(--color-text)); opacity: 0; animation: bs-rise 0.7s cubic-bezier(.2,.7,.3,1) 0.42s both;"><span style="opacity: 0.78;">Like a bee, always busy building something valuable. Creating websites and apps with the same focus, precision and persistence brought into the water. Turning ideas into digital product while representing the county in water polo.</span></p>
+      <h1 data-hero-h1="1" style="margin: 0; font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.5rem, 4.8vw, 6rem); line-height: 0.98; letter-spacing: -0.022em; text-wrap: pretty; max-width: 24ch; text-shadow: var(--hero-glow, none);">I design the part your customers can<br><span style="white-space: nowrap;">actually </span><span style="position: relative; display: inline-block; white-space: nowrap; cursor: pointer; animation: bs-press {{ loopDur }} cubic-bezier(.3,.7,.3,1) infinite; will-change: transform;" onClick="{{ onToggleTheme }}" onPointerDown="{{ onPress }}" onPointerUp="{{ onRelease }}" onPointerLeave="{{ onRelease }}"><span style="position: absolute; inset: -0.12em -0.16em; border: 2px solid var(--hero-ring, var(--color-accent)); border-radius: 999px; animation: bs-ripple {{ loopDur }} cubic-bezier(.2,.8,.3,1) infinite; pointer-events: none;"></span><span style="position: absolute; inset: -0.12em -0.16em; border: 2px solid var(--hero-ring-2, var(--color-accent-300)); border-radius: 999px; animation: bs-ripple {{ loopDur }} cubic-bezier(.2,.8,.3,1) infinite; animation-delay: 0.16s; pointer-events: none;"></span><span style="position: relative; color: var(--hero-touch, #b8801f); transition: color 0.55s ease; font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-weight: 500; letter-spacing: 0.005em; padding-right: 0.03em;">touch</span><span style="position: absolute; left: 0; bottom: -0.28em; width: 1.02em; height: 1.02em; margin-left: -0.78em; opacity: 0; offset-path: path('M -20 320 C 66 252 -86 196 -22 130 C 6 92 -12 46 24 10'); offset-rotate: auto; offset-anchor: 50% 50%; animation: bs-path {{ loopDur }} cubic-bezier(.45,.05,.55,.95) infinite; pointer-events: none; z-index: 3; will-change: offset-distance; filter: drop-shadow(0 2px 3px rgba(32,30,29,0.22));"><svg viewBox="0 0 76 48" style="width: 100%; height: 100%; display: block; overflow: visible;"><g><path d="M47 17 C37 5 18 0 11 6 C6 11 24 19 43 20 Z" fill="#e6edf2" stroke="#4a423d" stroke-width="0.8" style="transform-origin: 47px 19px; animation: bs-wing 0.13s ease-in-out infinite;"></path><path d="M49 19 C41 10 25 6 20 10 C16 14 32 21 46 22 Z" fill="#d9e3ea" stroke="#5a5049" stroke-width="0.7" style="transform-origin: 49px 21px; animation: bs-wing 0.13s ease-in-out infinite; animation-delay: 0.04s;"></path></g><path d="M45 32 L40 44 M51 33 L50 45 M57 31 L60 42" stroke="#2b2320" stroke-width="1.7" stroke-linecap="round"></path><path d="M12 25 C12 17 21 11 31 11 C40 11 46 17 46 25 C46 33 39 39 30 39 C20 39 12 33 12 25 Z" fill="#c2872a"></path><path d="M18 13.5 C15.5 20 15.2 30.5 17.6 36.6 C19 37.4 20.5 38 22.1 38.4 C19.4 32 19.6 20.6 22.4 12.9 C20.9 13 19.4 13.2 18 13.5 Z" fill="#2b2320"></path><path d="M28 11.2 C25.6 18 25.4 31 28 38.9 C29.5 39 31 38.9 32.4 38.6 C29.8 30.8 29.9 18 32.4 11.4 C31 11.2 29.5 11.1 28 11.2 Z" fill="#2b2320"></path><path d="M38.6 13.2 C36.6 19.4 36.4 30.6 38.6 36.6 C39.9 35.8 41 34.8 41.9 33.6 C40.4 28.4 40.5 21.4 42 16.2 C41.1 15 40 13.9 38.6 13.2 Z" fill="#2b2320"></path><path d="M12.4 22 C8 20.4 4 19 1 18.6 C3.4 20.8 7 23.4 11 25.2 Z" fill="#2b2320"></path><ellipse cx="52" cy="25" rx="9" ry="8.4" fill="#6f4d24"></ellipse><g stroke="#8f6a33" stroke-width="1.3" stroke-linecap="round"><path d="M46 18.5 L44.6 16.4"></path><path d="M52 16.6 L52 14.2"></path><path d="M57.6 18.6 L59.2 16.6"></path><path d="M45.4 31 L43.4 32.6"></path><path d="M58 31.2 L60 32.8"></path></g><circle cx="63.5" cy="24" r="6.6" fill="#241d1a"></circle><ellipse cx="66" cy="22.6" rx="2.5" ry="3.1" fill="#4e433c"></ellipse><path d="M66.5 18 C69.5 13.5 72 11 74.5 10 M62.5 17.6 C63.5 13 64.5 10.6 65.5 8.6" stroke="#241d1a" stroke-width="1.6" stroke-linecap="round" fill="none"></path></svg></span></span>.</h1>
+      <p style="margin: clamp(16px, 2.1vw, 32px) 0 0; max-width: 42ch; font-family: var(--font-body); font-size: clamp(0.9rem, 1.24vw, 1.24rem); line-height: 1.5; text-shadow: var(--hero-glow-sm, none); color: var(--hero-ink, var(--color-text)); opacity: 0; animation: bs-rise 0.7s cubic-bezier(.2,.7,.3,1) 0.42s both;"><span style="opacity: 0.78;">Like a bee, always busy building something valuable. Creating websites and apps. Turning ideas into digital products.</span></p>
     </div>
 
-    <div style="flex: 0 0 auto; align-self: stretch; position: relative; overflow: hidden; width: calc(clamp(26px, min(7.4vw, 13.6vh), 240px) * 6 + clamp(6px, 0.8vw, 12px) * 4.5); margin: calc(-1 * clamp(16px, 2.4vw, 34px)) calc(-1 * clamp(12px, 1.6vw, 28px)) calc(-1 * clamp(16px, 2.4vw, 34px)) auto;">
+    <div data-photo-panel="1" style="flex: 0 0 auto; align-self: stretch; position: relative; overflow: hidden; width: calc(clamp(26px, min(7.4vw, 13.6vh), 240px) * 6 + clamp(6px, 0.8vw, 12px) * 4.5); margin: calc(-1 * clamp(16px, 2.4vw, 34px)) calc(-1 * clamp(12px, 1.6vw, 28px)) calc(-1 * clamp(16px, 2.4vw, 34px)) auto;">
       <div data-photo-gap="1" style="position: absolute; inset: 0; background: var(--hero-gap, transparent);"></div>
-      <div data-photo-img="1" style="position: absolute; inset: 0; background-image: url('uploads/Subject%203.png'); background-repeat: no-repeat; background-position: right 0 bottom 0; background-size: contain;"></div>
+      <div data-photo-img="1" role="img" aria-label="Portrait of Filip Ćorić" style="position: absolute; inset: 0; background-image: url('uploads/opt/Subject%203.webp'); background-repeat: no-repeat; background-position: right 0 bottom 0; background-size: contain;"></div>
       <div data-photo-anchor="1" style="position: absolute; top: calc((clamp(26px, min(7.4vw, 13.6vh), 240px) * -0.866 - clamp(6px, 0.8vw, 12px) * 0.866) * 1.35); right: calc(clamp(26px, min(7.4vw, 13.6vh), 240px) * -0.5 - clamp(6px, 0.8vw, 12px)); display: flex; gap: clamp(6px, 0.8vw, 12px); visibility: hidden; pointer-events: none;">
         <div data-hero-cell="1" style="flex: 0 0 auto; width: clamp(26px, min(7.4vw, 13.6vh), 240px); aspect-ratio: 0.866;"></div>
       </div>
     </div>
   </div>
 </section>
-
-  <section data-screen-label="Websites" style="position: relative; width: 100%; height: 100vh; min-height: 100vh; max-height: 100vh; box-sizing: border-box; overflow: hidden; background-color: transparent; color: var(--hero-ink, var(--color-text)); font-family: var(--font-body); display: flex; flex-direction: column; gap: clamp(16px, 2.4vw, 38px); padding: clamp(72px, 9.5vw, 190px) 0 clamp(10px, 1.6vh, 22px);">
-    <div data-honey="hero-to-web" data-melt="1" style="position: absolute; left: 0; right: 0; top: -2px; height: clamp(190px, 33vw, 660px); z-index: 9; pointer-events: none; background-image: linear-gradient(180deg, #f6b81f 0%, #eb9c07 22%, #d97f04 52%, #b45f02 100%); -webkit-mask-image: url('uploads/ChatGPT%20Image%20Aug%2021%2C%202026%2C%2009_31_44%20AM%20(1).png'); mask-image: url('uploads/ChatGPT%20Image%20Aug%2021%2C%202026%2C%2009_31_44%20AM%20(1).png'); -webkit-mask-size: 100% auto; mask-size: 100% auto; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: top center; mask-position: top center; -webkit-mask-mode: luminance; mask-mode: luminance;"></div>
+  <section id="websites" data-screen-label="Websites" style="position: relative; width: 100%; height: 100vh; min-height: 100vh; max-height: 100vh; box-sizing: border-box; overflow: hidden; background-color: transparent; color: var(--hero-ink, var(--color-text)); font-family: var(--font-body); display: flex; flex-direction: column; gap: clamp(16px, 2.4vw, 38px); padding: clamp(72px, 9.5vw, 190px) 0 clamp(10px, 1.6vh, 22px);">
       <div style="position: relative; z-index: 12; display: flex; flex-wrap: wrap; align-items: baseline; gap: clamp(10px, 1.4vw, 26px); padding: 0 clamp(20px, 4vw, 72px);">
         <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.7rem, 1vw, 0.95rem); letter-spacing: 0.2em; text-transform: uppercase; text-shadow: var(--hero-glow, 0 1px 0 rgba(243,242,242,0.85), 0 0 6px rgba(243,242,242,0.7)); color: var(--hero-ink, #5f3a06);">01</span>
         <h2 style="margin: 0; font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.6rem, 3.4vw, 3.9rem); line-height: 1.02; letter-spacing: -0.02em; text-shadow: var(--hero-glow, 0 1px 0 rgba(243,242,242,0.85), 0 0 6px rgba(243,242,242,0.7)); color: var(--hero-ink, #5f3a06);">Websites</h2>
@@ -690,63 +740,75 @@
       </div>
       <div data-strip="1" data-dir="-1" style="position: relative; z-index: 10; flex: 1 1 auto; min-height: 0; display: flex; align-items: flex-start; gap: clamp(12px, 1.6vw, 30px); overflow-x: auto; overflow-y: hidden; padding: 0 clamp(20px, 4vw, 72px); scrollbar-width: none;">
         <figure style="margin: 0; flex: 0 0 auto; height: 100%; display: flex; align-items: center; min-height: 0;">
-          <a href="https://filipcoric10.github.io/vulkanizertj/" target="_blank" rel="noopener" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
-            <image-slot id="vulk-1" fit="contain" mask="inset(0)" src="uploads/Screenshot%202026-08-20%20at%2013.01.54.png" placeholder="Team Vulkanizer TJ" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+          <a href="https://filipcoric10.github.io/vulkanizertj/" target="_blank" rel="noopener" data-cap-host="1" aria-label="Open Team Vulkanizer TJ website" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
+            <image-slot id="vulk-1" fit="contain" mask="inset(0)" src="uploads/opt/Screenshot%202026-08-20%20at%2013.01.54.webp" placeholder="Team Vulkanizer TJ" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+                      <div data-cap="1" style="position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(12px, 1.4vw, 26px) clamp(14px, 1.6vw, 30px); box-sizing: border-box; background: linear-gradient(to top, rgba(24,20,14,0.92) 0%, rgba(24,20,14,0.78) 62%, rgba(24,20,14,0) 100%); color: #f6ecd6; font-family: var(--font-body); font-size: clamp(0.74rem, 1.05vw, 1.02rem); line-height: 1.4; text-wrap: pretty; pointer-events: none;"><span style="display: block; font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.25vw, 1.2rem); letter-spacing: -0.01em; margin-bottom: 0.28em;">Team Vulkanizer TJ</span>Owners of luxury cars pick the detailing they want, see it in before and after, and choose annual packages.</div>
           </a>
         </figure>
         <figure style="margin: 0; flex: 0 0 auto; height: 100%; display: flex; align-items: center; min-height: 0;">
-          <a href="https://filipcoric10.github.io/vulkanizertj/" target="_blank" rel="noopener" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
-            <image-slot id="vulk-2" fit="contain" mask="inset(0)" src="uploads/Screenshot%202026-08-20%20at%2013.02.43.png" placeholder="Team Vulkanizer TJ" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+          <a href="https://filipcoric10.github.io/vulkanizertj/" target="_blank" rel="noopener" data-cap-host="1" aria-label="Open Team Vulkanizer TJ website" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
+            <image-slot id="vulk-2" fit="contain" mask="inset(0)" src="uploads/opt/Screenshot%202026-08-20%20at%2013.02.43.webp" placeholder="Team Vulkanizer TJ" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+                      <div data-cap="1" style="position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(12px, 1.4vw, 26px) clamp(14px, 1.6vw, 30px); box-sizing: border-box; background: linear-gradient(to top, rgba(24,20,14,0.92) 0%, rgba(24,20,14,0.78) 62%, rgba(24,20,14,0) 100%); color: #f6ecd6; font-family: var(--font-body); font-size: clamp(0.74rem, 1.05vw, 1.02rem); line-height: 1.4; text-wrap: pretty; pointer-events: none;"><span style="display: block; font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.25vw, 1.2rem); letter-spacing: -0.01em; margin-bottom: 0.28em;">Team Vulkanizer TJ</span>Owners of luxury cars pick the detailing they want, see it in before and after, and choose annual packages.</div>
           </a>
         </figure>
         <figure style="margin: 0; flex: 0 0 auto; height: 100%; display: flex; align-items: center; min-height: 0;">
-          <a href="https://filipcoric10.github.io/lokomotocentar/" target="_blank" rel="noopener" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
-            <image-slot id="loko-1" fit="contain" mask="inset(0)" src="uploads/Screenshot%202026-08-20%20at%2013.03.30-9021fc93.png" placeholder="Lokomoto Centar" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+          <a href="https://filipcoric10.github.io/lokomotocentar/" target="_blank" rel="noopener" data-cap-host="1" aria-label="Open Lokomoto Centar clinic website" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
+            <image-slot id="loko-1" fit="contain" mask="inset(0)" src="uploads/opt/Screenshot%202026-08-20%20at%2013.03.30-9021fc93.webp" placeholder="Lokomoto Centar" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+                      <div data-cap="1" style="position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(12px, 1.4vw, 26px) clamp(14px, 1.6vw, 30px); box-sizing: border-box; background: linear-gradient(to top, rgba(24,20,14,0.92) 0%, rgba(24,20,14,0.78) 62%, rgba(24,20,14,0) 100%); color: #f6ecd6; font-family: var(--font-body); font-size: clamp(0.74rem, 1.05vw, 1.02rem); line-height: 1.4; text-wrap: pretty; pointer-events: none;"><span style="display: block; font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.25vw, 1.2rem); letter-spacing: -0.01em; margin-bottom: 0.28em;">Lokomoto Centar</span>The site promoted a two-day training programme. Demand rose 40% over the previous one.</div>
           </a>
         </figure>
         <figure style="margin: 0; flex: 0 0 auto; height: 100%; display: flex; align-items: center; min-height: 0;">
-          <a href="https://filipcoric10.github.io/lokomotocentar/" target="_blank" rel="noopener" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
-            <image-slot id="loko-2" fit="contain" mask="inset(0)" src="uploads/Screenshot%202026-08-20%20at%2013.03.55.png" placeholder="Lokomoto Centar" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+          <a href="https://filipcoric10.github.io/lokomotocentar/" target="_blank" rel="noopener" data-cap-host="1" aria-label="Open Lokomoto Centar clinic website" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
+            <image-slot id="loko-2" fit="contain" mask="inset(0)" src="uploads/opt/Screenshot%202026-08-20%20at%2013.03.55.webp" placeholder="Lokomoto Centar" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+                      <div data-cap="1" style="position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(12px, 1.4vw, 26px) clamp(14px, 1.6vw, 30px); box-sizing: border-box; background: linear-gradient(to top, rgba(24,20,14,0.92) 0%, rgba(24,20,14,0.78) 62%, rgba(24,20,14,0) 100%); color: #f6ecd6; font-family: var(--font-body); font-size: clamp(0.74rem, 1.05vw, 1.02rem); line-height: 1.4; text-wrap: pretty; pointer-events: none;"><span style="display: block; font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.25vw, 1.2rem); letter-spacing: -0.01em; margin-bottom: 0.28em;">Lokomoto Centar</span>The site promoted a two-day training programme. Demand rose 40% over the previous one.</div>
           </a>
         </figure>
         <figure style="margin: 0; flex: 0 0 auto; height: 100%; display: flex; align-items: center; min-height: 0;">
-          <a href="https://batiktennisclub.online/" target="_blank" rel="noopener" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
-            <image-slot id="batika-1" fit="contain" mask="inset(0)" src="uploads/Screenshot%202026-08-20%20at%2013.05.45.png" placeholder="Batika Tennis Club" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+          <a href="https://batiktennisclub.online/" target="_blank" rel="noopener" data-cap-host="1" aria-label="Open Batika Tennis Club website" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
+            <image-slot id="batika-1" fit="contain" mask="inset(0)" src="uploads/opt/Screenshot%202026-08-20%20at%2013.05.45.webp" placeholder="Batika Tennis Club" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+                      <div data-cap="1" style="position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(12px, 1.4vw, 26px) clamp(14px, 1.6vw, 30px); box-sizing: border-box; background: linear-gradient(to top, rgba(24,20,14,0.92) 0%, rgba(24,20,14,0.78) 62%, rgba(24,20,14,0) 100%); color: #f6ecd6; font-family: var(--font-body); font-size: clamp(0.74rem, 1.05vw, 1.02rem); line-height: 1.4; text-wrap: pretty; pointer-events: none;"><span style="display: block; font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.25vw, 1.2rem); letter-spacing: -0.01em; margin-bottom: 0.28em;">Batika Tennis Club</span>Top courts, now with a site to match. Booking moved online, and visits rose with it.</div>
           </a>
         </figure>
         <figure style="margin: 0; flex: 0 0 auto; height: 100%; display: flex; align-items: center; min-height: 0;">
-          <a href="https://batiktennisclub.online/" target="_blank" rel="noopener" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
-            <image-slot id="batika-2" fit="contain" mask="inset(0)" src="uploads/Screenshot%202026-08-20%20at%2013.05.57.png" placeholder="Batika Tennis Club" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+          <a href="https://batiktennisclub.online/" target="_blank" rel="noopener" data-cap-host="1" aria-label="Open Batika Tennis Club website" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
+            <image-slot id="batika-2" fit="contain" mask="inset(0)" src="uploads/opt/Screenshot%202026-08-20%20at%2013.05.57.webp" placeholder="Batika Tennis Club" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+                      <div data-cap="1" style="position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(12px, 1.4vw, 26px) clamp(14px, 1.6vw, 30px); box-sizing: border-box; background: linear-gradient(to top, rgba(24,20,14,0.92) 0%, rgba(24,20,14,0.78) 62%, rgba(24,20,14,0) 100%); color: #f6ecd6; font-family: var(--font-body); font-size: clamp(0.74rem, 1.05vw, 1.02rem); line-height: 1.4; text-wrap: pretty; pointer-events: none;"><span style="display: block; font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.25vw, 1.2rem); letter-spacing: -0.01em; margin-bottom: 0.28em;">Batika Tennis Club</span>Top courts, now with a site to match. Booking moved online, and visits rose with it.</div>
           </a>
         </figure>
         <figure style="margin: 0; flex: 0 0 auto; height: 100%; display: flex; align-items: center; min-height: 0;">
-          <a href="https://filipcoric10.github.io/vulkanizertj/" target="_blank" rel="noopener" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
-            <image-slot id="vulk-1-b" fit="contain" mask="inset(0)" src="uploads/Screenshot%202026-08-20%20at%2013.01.54.png" placeholder="Team Vulkanizer TJ" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+          <a href="https://filipcoric10.github.io/vulkanizertj/" target="_blank" rel="noopener" data-cap-host="1" aria-label="Open Team Vulkanizer TJ website" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
+            <image-slot id="vulk-1-b" fit="contain" mask="inset(0)" src="uploads/opt/Screenshot%202026-08-20%20at%2013.01.54.webp" placeholder="Team Vulkanizer TJ" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+                      <div data-cap="1" style="position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(12px, 1.4vw, 26px) clamp(14px, 1.6vw, 30px); box-sizing: border-box; background: linear-gradient(to top, rgba(24,20,14,0.92) 0%, rgba(24,20,14,0.78) 62%, rgba(24,20,14,0) 100%); color: #f6ecd6; font-family: var(--font-body); font-size: clamp(0.74rem, 1.05vw, 1.02rem); line-height: 1.4; text-wrap: pretty; pointer-events: none;"><span style="display: block; font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.25vw, 1.2rem); letter-spacing: -0.01em; margin-bottom: 0.28em;">Team Vulkanizer TJ</span>Owners of luxury cars pick the detailing they want, see it in before and after, and choose annual packages.</div>
           </a>
         </figure>
         <figure style="margin: 0; flex: 0 0 auto; height: 100%; display: flex; align-items: center; min-height: 0;">
-          <a href="https://filipcoric10.github.io/vulkanizertj/" target="_blank" rel="noopener" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
-            <image-slot id="vulk-2-b" fit="contain" mask="inset(0)" src="uploads/Screenshot%202026-08-20%20at%2013.02.43.png" placeholder="Team Vulkanizer TJ" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+          <a href="https://filipcoric10.github.io/vulkanizertj/" target="_blank" rel="noopener" data-cap-host="1" aria-label="Open Team Vulkanizer TJ website" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
+            <image-slot id="vulk-2-b" fit="contain" mask="inset(0)" src="uploads/opt/Screenshot%202026-08-20%20at%2013.02.43.webp" placeholder="Team Vulkanizer TJ" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+                      <div data-cap="1" style="position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(12px, 1.4vw, 26px) clamp(14px, 1.6vw, 30px); box-sizing: border-box; background: linear-gradient(to top, rgba(24,20,14,0.92) 0%, rgba(24,20,14,0.78) 62%, rgba(24,20,14,0) 100%); color: #f6ecd6; font-family: var(--font-body); font-size: clamp(0.74rem, 1.05vw, 1.02rem); line-height: 1.4; text-wrap: pretty; pointer-events: none;"><span style="display: block; font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.25vw, 1.2rem); letter-spacing: -0.01em; margin-bottom: 0.28em;">Team Vulkanizer TJ</span>Owners of luxury cars pick the detailing they want, see it in before and after, and choose annual packages.</div>
           </a>
         </figure>
         <figure style="margin: 0; flex: 0 0 auto; height: 100%; display: flex; align-items: center; min-height: 0;">
-          <a href="https://filipcoric10.github.io/lokomotocentar/" target="_blank" rel="noopener" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
-            <image-slot id="loko-1-b" fit="contain" mask="inset(0)" src="uploads/Screenshot%202026-08-20%20at%2013.03.30-9021fc93.png" placeholder="Lokomoto Centar" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+          <a href="https://filipcoric10.github.io/lokomotocentar/" target="_blank" rel="noopener" data-cap-host="1" aria-label="Open Lokomoto Centar clinic website" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
+            <image-slot id="loko-1-b" fit="contain" mask="inset(0)" src="uploads/opt/Screenshot%202026-08-20%20at%2013.03.30-9021fc93.webp" placeholder="Lokomoto Centar" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+                      <div data-cap="1" style="position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(12px, 1.4vw, 26px) clamp(14px, 1.6vw, 30px); box-sizing: border-box; background: linear-gradient(to top, rgba(24,20,14,0.92) 0%, rgba(24,20,14,0.78) 62%, rgba(24,20,14,0) 100%); color: #f6ecd6; font-family: var(--font-body); font-size: clamp(0.74rem, 1.05vw, 1.02rem); line-height: 1.4; text-wrap: pretty; pointer-events: none;"><span style="display: block; font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.25vw, 1.2rem); letter-spacing: -0.01em; margin-bottom: 0.28em;">Lokomoto Centar</span>The site promoted a two-day training programme. Demand rose 40% over the previous one.</div>
           </a>
         </figure>
         <figure style="margin: 0; flex: 0 0 auto; height: 100%; display: flex; align-items: center; min-height: 0;">
-          <a href="https://filipcoric10.github.io/lokomotocentar/" target="_blank" rel="noopener" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
-            <image-slot id="loko-2-b" fit="contain" mask="inset(0)" src="uploads/Screenshot%202026-08-20%20at%2013.03.55.png" placeholder="Lokomoto Centar" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+          <a href="https://filipcoric10.github.io/lokomotocentar/" target="_blank" rel="noopener" data-cap-host="1" aria-label="Open Lokomoto Centar clinic website" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
+            <image-slot id="loko-2-b" fit="contain" mask="inset(0)" src="uploads/opt/Screenshot%202026-08-20%20at%2013.03.55.webp" placeholder="Lokomoto Centar" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+                      <div data-cap="1" style="position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(12px, 1.4vw, 26px) clamp(14px, 1.6vw, 30px); box-sizing: border-box; background: linear-gradient(to top, rgba(24,20,14,0.92) 0%, rgba(24,20,14,0.78) 62%, rgba(24,20,14,0) 100%); color: #f6ecd6; font-family: var(--font-body); font-size: clamp(0.74rem, 1.05vw, 1.02rem); line-height: 1.4; text-wrap: pretty; pointer-events: none;"><span style="display: block; font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.25vw, 1.2rem); letter-spacing: -0.01em; margin-bottom: 0.28em;">Lokomoto Centar</span>The site promoted a two-day training programme. Demand rose 40% over the previous one.</div>
           </a>
         </figure>
         <figure style="margin: 0; flex: 0 0 auto; height: 100%; display: flex; align-items: center; min-height: 0;">
-          <a href="https://batiktennisclub.online/" target="_blank" rel="noopener" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
-            <image-slot id="batika-1-b" fit="contain" mask="inset(0)" src="uploads/Screenshot%202026-08-20%20at%2013.05.45.png" placeholder="Batika Tennis Club" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+          <a href="https://batiktennisclub.online/" target="_blank" rel="noopener" data-cap-host="1" aria-label="Open Batika Tennis Club website" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
+            <image-slot id="batika-1-b" fit="contain" mask="inset(0)" src="uploads/opt/Screenshot%202026-08-20%20at%2013.05.45.webp" placeholder="Batika Tennis Club" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+                      <div data-cap="1" style="position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(12px, 1.4vw, 26px) clamp(14px, 1.6vw, 30px); box-sizing: border-box; background: linear-gradient(to top, rgba(24,20,14,0.92) 0%, rgba(24,20,14,0.78) 62%, rgba(24,20,14,0) 100%); color: #f6ecd6; font-family: var(--font-body); font-size: clamp(0.74rem, 1.05vw, 1.02rem); line-height: 1.4; text-wrap: pretty; pointer-events: none;"><span style="display: block; font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.25vw, 1.2rem); letter-spacing: -0.01em; margin-bottom: 0.28em;">Batika Tennis Club</span>Top courts, now with a site to match. Booking moved online, and visits rose with it.</div>
           </a>
         </figure>
         <figure style="margin: 0; flex: 0 0 auto; height: 100%; display: flex; align-items: center; min-height: 0;">
-          <a href="https://batiktennisclub.online/" target="_blank" rel="noopener" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
-            <image-slot id="batika-2-b" fit="contain" mask="inset(0)" src="uploads/Screenshot%202026-08-20%20at%2013.05.57.png" placeholder="Batika Tennis Club" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+          <a href="https://batiktennisclub.online/" target="_blank" rel="noopener" data-cap-host="1" aria-label="Open Batika Tennis Club website" style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 16 / 9; display: block; overflow: hidden; text-decoration: none; cursor: pointer;">
+            <image-slot id="batika-2-b" fit="contain" mask="inset(0)" src="uploads/opt/Screenshot%202026-08-20%20at%2013.05.57.webp" placeholder="Batika Tennis Club" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+                      <div data-cap="1" style="position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(12px, 1.4vw, 26px) clamp(14px, 1.6vw, 30px); box-sizing: border-box; background: linear-gradient(to top, rgba(24,20,14,0.92) 0%, rgba(24,20,14,0.78) 62%, rgba(24,20,14,0) 100%); color: #f6ecd6; font-family: var(--font-body); font-size: clamp(0.74rem, 1.05vw, 1.02rem); line-height: 1.4; text-wrap: pretty; pointer-events: none;"><span style="display: block; font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.25vw, 1.2rem); letter-spacing: -0.01em; margin-bottom: 0.28em;">Batika Tennis Club</span>Top courts, now with a site to match. Booking moved online, and visits rose with it.</div>
           </a>
         </figure>
       </div>
@@ -757,50 +819,96 @@
       </div>
   </section>
 
-  <section data-screen-label="Mobile apps" style="position: relative; width: 100%; height: 100vh; min-height: 100vh; max-height: 100vh; box-sizing: border-box; overflow: hidden; background-color: transparent; color: var(--hero-ink, var(--color-text)); font-family: var(--font-body); display: flex; flex-direction: column; gap: clamp(16px, 2.4vw, 38px); padding: clamp(72px, 9.5vw, 190px) clamp(20px, 4vw, 72px) clamp(10px, 1.6vh, 22px);">
-    <div style="position: absolute; top: clamp(-28px, -2vw, -10px); right: clamp(-96px, -7vw, -34px); width: clamp(150px, 21vw, 420px); aspect-ratio: 1.5; z-index: 2; pointer-events: none; background-image: url('uploads/ChatGPT%20Image%20Aug%2021%2C%202026%2C%2010_32_58%20AM.png'); background-size: contain; background-repeat: no-repeat; background-position: top right; mix-blend-mode: multiply;"></div>
+  <section id="about" data-screen-label="About" style="position: relative; width: 100%; min-height: 92vh; box-sizing: border-box; overflow: hidden; background-color: transparent; color: var(--hero-ink, var(--color-text)); font-family: var(--font-body); display: flex; flex-direction: column; justify-content: flex-start; gap: clamp(18px, 2.4vw, 40px); padding: clamp(24px, 3vw, 48px) clamp(20px, 4vw, 72px) clamp(28px, 3.4vw, 56px);">
+  <div data-hero-copy="1" style="position: relative; z-index: 3; display: flex; flex-wrap: wrap; align-items: baseline; gap: clamp(10px, 1.4vw, 26px);">
+    <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.7rem, 1vw, 0.95rem); letter-spacing: 0.2em; text-transform: uppercase; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow, 0 1px 0 rgba(243,242,242,0.85), 0 0 6px rgba(243,242,242,0.7));">02</span>
+    <h2 style="margin: 0; font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.6rem, 3.4vw, 3.9rem); line-height: 1.02; letter-spacing: -0.02em; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow, 0 1px 0 rgba(243,242,242,0.85), 0 0 6px rgba(243,242,242,0.7));">Working with me</h2>
+    <span style="font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-weight: 600; font-size: clamp(1.05rem, 1.6vw, 1.6rem); color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">from brief to launch</span>
+  </div>
+
+  <div data-hero-copy="1" style="position: relative; z-index: 3; flex: 1 1 auto; display: flex; align-items: center; justify-content: center; min-height: 0;">
+      <div style="position: relative; width: min(780px, 100%);">
+      <span aria-hidden="true" style="position: absolute; z-index: 2; top: clamp(-14px, -1.2vw, -10px); left: clamp(24px, 3.4vw, 56px); width: clamp(22px, 2vw, 30px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f);"></span>
+      <div data-reveal="1" style="opacity: 0; transform: translateY(20px); transition: opacity 0.65s cubic-bezier(.2,.7,.3,1), transform 0.65s cubic-bezier(.2,.7,.3,1); position: relative; width: 100%; box-sizing: border-box; background: var(--hero-paper, #f3f2f2); box-shadow: 0 26px 60px rgba(24,20,14,0.22), 0 2px 0 rgba(184,128,31,0.35); padding: clamp(28px, 3.6vw, 60px) clamp(24px, 3.4vw, 56px) clamp(30px, 3.8vw, 62px);">
+        <div style="position: absolute; inset: 0; pointer-events: none; border: 1px solid rgba(184,128,31,0.42);"></div>
+        <div style="font-family: var(--font-body); font-size: clamp(0.6rem, 0.84vw, 0.82rem); letter-spacing: 0.22em; text-transform: uppercase; color: var(--hero-ink, #5f3a06);">Freelance UI/UX &amp; web design</div>
+        <p style="margin: clamp(14px, 1.6vw, 24px) 0 clamp(22px, 2.6vw, 40px); font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.5rem, 3.4vw, 3.2rem); line-height: 1.02; letter-spacing: -0.028em; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow, 0 1px 0 rgba(243,242,242,0.85), 0 0 6px rgba(243,242,242,0.7)); text-wrap: pretty;">Your idea, live on the web in <span style="font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-weight: 500; color: var(--hero-touch, #b8801f);">days</span>.</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: clamp(20px, 2.6vw, 44px); align-items: start;">
+          <div style="display: flex; flex-direction: column; align-items: flex-start;">
+            <span aria-hidden="true" style="display: block; width: clamp(11px, 0.95vw, 15px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); margin: 0 0 clamp(8px, 0.9vw, 13px);"></span>
+            <div style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.9rem, 3.4vw, 3.4rem); line-height: 0.9; letter-spacing: -0.03em; color: var(--hero-touch, #b8801f); text-shadow: var(--hero-glow-sm, none);">24–48</div>
+            <div style="margin-top: clamp(7px, 0.8vw, 12px); font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.6rem, 0.82vw, 0.82rem); letter-spacing: 0.2em; text-transform: uppercase; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">hours</div>
+            <p style="margin: clamp(6px, 0.7vw, 10px) 0 0; max-width: 22ch; font-size: clamp(0.84rem, 1.02vw, 1.04rem); line-height: 1.45; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">A straightforward website designed, built and live — hosting and domain included.</p>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: flex-start;">
+            <span aria-hidden="true" style="display: block; width: clamp(11px, 0.95vw, 15px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); margin: 0 0 clamp(8px, 0.9vw, 13px);"></span>
+            <div style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.9rem, 3.4vw, 3.4rem); line-height: 0.9; letter-spacing: -0.03em; color: var(--hero-touch, #b8801f); text-shadow: var(--hero-glow-sm, none);">1–2</div>
+            <div style="margin-top: clamp(7px, 0.8vw, 12px); font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.6rem, 0.82vw, 0.82rem); letter-spacing: 0.2em; text-transform: uppercase; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">months</div>
+            <p style="margin: clamp(6px, 0.7vw, 10px) 0 0; max-width: 22ch; font-size: clamp(0.84rem, 1.02vw, 1.04rem); line-height: 1.45; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">An app designed end to end, then built out with the developer I work with.</p>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: flex-start;">
+            <span aria-hidden="true" style="display: block; width: clamp(11px, 0.95vw, 15px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); margin: 0 0 clamp(8px, 0.9vw, 13px);"></span>
+            <div style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.9rem, 3.4vw, 3.4rem); line-height: 0.9; letter-spacing: -0.03em; color: var(--hero-touch, #b8801f); text-shadow: var(--hero-glow-sm, none);">100%</div>
+            <div style="margin-top: clamp(7px, 0.8vw, 12px); font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.6rem, 0.82vw, 0.82rem); letter-spacing: 0.2em; text-transform: uppercase; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">remote</div>
+            <p style="margin: clamp(6px, 0.7vw, 10px) 0 0; max-width: 22ch; font-size: clamp(0.84rem, 1.02vw, 1.04rem); line-height: 1.45; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">Freelance, working with clients anywhere. You stay in the loop by call.</p>
+          </div>
+        </div>
+        <div style="margin-top: clamp(22px, 2.6vw, 40px); display: flex; flex-wrap: wrap; align-items: baseline; gap: clamp(9px, 1.2vw, 20px); font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.64rem, 0.86vw, 0.88rem); letter-spacing: 0.16em; text-transform: uppercase; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">
+          <span>Nauči Dizajn</span><span aria-hidden="true" style="opacity: 0.5;">·</span>
+          <span>certification in progress</span><span aria-hidden="true" style="opacity: 0.5;">·</span>
+          <span>Figma</span><span aria-hidden="true" style="opacity: 0.5;">·</span>
+          <span>Claude</span>
+        </div>
+      </div>
+      </div>
+    </div>
+</section>
+  <section id="apps" data-screen-label="Mobile apps" style="position: relative; width: 100%; height: 100vh; min-height: 100vh; max-height: 100vh; box-sizing: border-box; overflow: hidden; background-color: transparent; color: var(--hero-ink, var(--color-text)); font-family: var(--font-body); display: flex; flex-direction: column; gap: clamp(16px, 2.4vw, 38px); padding: clamp(72px, 9.5vw, 190px) clamp(20px, 4vw, 72px) clamp(10px, 1.6vh, 22px);">
+    <div style="position: absolute; top: clamp(-28px, -2vw, -10px); right: clamp(-96px, -7vw, -34px); width: clamp(150px, 21vw, 420px); aspect-ratio: 1.5; z-index: 2; pointer-events: none; background-image: url('uploads/opt/apps-mark.webp'); background-size: contain; background-repeat: no-repeat; background-position: top right; mix-blend-mode: multiply;"></div>
       <div style="position: relative; z-index: 1; display: flex; flex-wrap: wrap; align-items: baseline; gap: clamp(10px, 1.4vw, 26px);">
-        <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.7rem, 1vw, 0.95rem); letter-spacing: 0.2em; text-transform: uppercase; color: var(--hero-touch, #b8801f);">02</span>
+        <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.7rem, 1vw, 0.95rem); letter-spacing: 0.2em; text-transform: uppercase; color: var(--hero-touch, #b8801f);">03</span>
         <h2 style="margin: 0; font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.6rem, 3.4vw, 3.9rem); line-height: 1.02; letter-spacing: -0.02em; text-shadow: var(--hero-glow, 0 1px 0 rgba(243,242,242,0.85), 0 0 6px rgba(243,242,242,0.7)); color: var(--hero-ink, #5f3a06);">Mobile apps</h2>
         <span style="font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-weight: 600; font-size: clamp(1.05rem, 1.6vw, 1.6rem); opacity: 1; text-shadow: var(--hero-glow-sm, none); color: var(--hero-sub, #201e1d);">UI/UX design</span>
       </div>
       <div data-strip="1" data-speed="90" style="position: relative; z-index: 1; flex: 1 1 auto; min-height: 0; display: flex; align-items: stretch; gap: clamp(16px, 3vw, 60px); overflow-x: auto; overflow-y: hidden; padding: 0; margin-left: calc(-1 * clamp(20px, 4vw, 72px)); margin-right: calc(-1 * clamp(20px, 4vw, 72px)); scrollbar-width: none;">
-        <figure style="margin: 0; flex: 0 0 auto; height: 100%; min-height: 0; display: flex; align-items: stretch;">
+        <figure data-cap-host="1" style="margin: 0; position: relative; flex: 0 0 auto; height: 100%; min-height: 0; display: flex; align-items: stretch;">
           <div style="height: 100%; display: flex; align-items: flex-start; gap: 0;">
             <div style="position: relative; flex: 0 0 auto; height: calc(100% - clamp(20px, 4.8vh, 68px)); width: auto; aspect-ratio: 9 / 19.5; container-type: inline-size; border-radius: clamp(12px, 1.5vw, 26px); margin-top: clamp(10px, 2.4vh, 34px); margin-right: calc(-1 * clamp(10px, 1.6vw, 30px)); z-index: 0; overflow: hidden;">
-              <image-slot id="app-1-a" fit="contain" mask="inset(0 round clamp(12px, 1.5vw, 26px))" src="uploads/IMG_2891.PNG" placeholder="App 1 — screen 01" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+              <image-slot id="app-1-a" fit="contain" mask="inset(0 round clamp(12px, 1.5vw, 26px))" src="uploads/opt/IMG_2891.webp" placeholder="App 1 — screen 01" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
               <svg viewBox="0 0 200 34" preserveAspectRatio="none" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 42%; height: 3.8%; min-height: 9px; pointer-events: none; z-index: 2; display: block;"><path d="M0,0 C6,0 8,2 8,8 V13 C8,24 17,34 29,34 H171 C183,34 192,24 192,13 V8 C192,2 194,0 200,0 Z" fill="#0b0b0c"></path></svg>
             </div>
             <div style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 9 / 19.5; container-type: inline-size; border-radius: clamp(12px, 1.5vw, 26px); margin-top: 0px; margin-right: calc(-1 * clamp(10px, 1.6vw, 30px)); z-index: 1; overflow: hidden;">
-              <image-slot id="app-1-b" fit="contain" mask="inset(0 round clamp(12px, 1.5vw, 26px))" src="uploads/IMG_2888.PNG" placeholder="App 1 — screen 02" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+              <image-slot id="app-1-b" fit="contain" mask="inset(0 round clamp(12px, 1.5vw, 26px))" src="uploads/opt/IMG_2888.webp" placeholder="App 1 — screen 02" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
               <svg viewBox="0 0 200 34" preserveAspectRatio="none" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 42%; height: 3.8%; min-height: 9px; pointer-events: none; z-index: 2; display: block;"><path d="M0,0 C6,0 8,2 8,8 V13 C8,24 17,34 29,34 H171 C183,34 192,24 192,13 V8 C192,2 194,0 200,0 Z" fill="#0b0b0c"></path></svg>
             </div>
             <div style="position: relative; flex: 0 0 auto; height: calc(100% - clamp(20px, 4.8vh, 68px)); width: auto; aspect-ratio: 9 / 19.5; container-type: inline-size; border-radius: clamp(12px, 1.5vw, 26px); margin-top: clamp(10px, 2.4vh, 34px); margin-right: calc(-1 * clamp(10px, 1.6vw, 30px)); z-index: 0; overflow: hidden;">
-              <image-slot id="app-1-c" fit="contain" mask="inset(0 round clamp(12px, 1.5vw, 26px))" src="uploads/IMG_2892.PNG" placeholder="App 1 — screen 03" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+              <image-slot id="app-1-c" fit="contain" mask="inset(0 round clamp(12px, 1.5vw, 26px))" src="uploads/opt/IMG_2892.webp" placeholder="App 1 — screen 03" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
               <svg viewBox="0 0 200 34" preserveAspectRatio="none" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 42%; height: 3.8%; min-height: 9px; pointer-events: none; z-index: 2; display: block;"><path d="M0,0 C6,0 8,2 8,8 V13 C8,24 17,34 29,34 H171 C183,34 192,24 192,13 V8 C192,2 194,0 200,0 Z" fill="#0b0b0c"></path></svg>
             </div>
           </div>
+                  <div data-cap="1" style="position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(12px, 1.4vw, 26px) clamp(14px, 1.6vw, 30px); box-sizing: border-box; background: linear-gradient(to top, rgba(24,20,14,0.92) 0%, rgba(24,20,14,0.78) 62%, rgba(24,20,14,0) 100%); color: #f6ecd6; font-family: var(--font-body); font-size: clamp(0.74rem, 1.05vw, 1.02rem); line-height: 1.4; text-wrap: pretty; pointer-events: none;"><span style="display: block; font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.25vw, 1.2rem); letter-spacing: -0.01em; margin-bottom: 0.28em;">FaithMatch</span>People meet others with the same values, so the relationship starts on firmer ground.</div>
         </figure>
-        <figure style="margin: 0; flex: 0 0 auto; height: 100%; min-height: 0; display: flex; align-items: stretch;">
+        <figure data-cap-host="1" style="margin: 0; position: relative; flex: 0 0 auto; height: 100%; min-height: 0; display: flex; align-items: stretch;">
           <div style="height: 100%; display: flex; align-items: flex-start; gap: 0;">
             <div style="position: relative; flex: 0 0 auto; height: calc(100% - clamp(20px, 4.8vh, 68px)); width: auto; aspect-ratio: 9 / 19.5; container-type: inline-size; border-radius: clamp(12px, 1.5vw, 26px); margin-top: clamp(10px, 2.4vh, 34px); margin-right: calc(-1 * clamp(10px, 1.6vw, 30px)); z-index: 0; overflow: hidden;">
-              <image-slot id="app-2-a" fit="contain" src="uploads/IMG_2895.PNG" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 2 — screen 01" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+              <image-slot id="app-2-a" fit="contain" src="uploads/opt/IMG_2895.webp" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 2 — screen 01" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
             </div>
             <div style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 9 / 19.5; container-type: inline-size; border-radius: clamp(12px, 1.5vw, 26px); margin-top: 0px; margin-right: calc(-1 * clamp(10px, 1.6vw, 30px)); z-index: 1; overflow: hidden;">
-              <image-slot id="app-2-b" fit="contain" src="uploads/IMG_2894.PNG" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 2 — screen 02" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+              <image-slot id="app-2-b" fit="contain" src="uploads/opt/IMG_2894.webp" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 2 — screen 02" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
             </div>
             <div style="position: relative; flex: 0 0 auto; height: calc(100% - clamp(20px, 4.8vh, 68px)); width: auto; aspect-ratio: 9 / 19.5; container-type: inline-size; border-radius: clamp(12px, 1.5vw, 26px); margin-top: clamp(10px, 2.4vh, 34px); margin-right: calc(-1 * clamp(10px, 1.6vw, 30px)); z-index: 0; overflow: hidden;">
-              <image-slot id="app-2-c" fit="contain" src="uploads/IMG_2896.PNG" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 2 — screen 03" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+              <image-slot id="app-2-c" fit="contain" src="uploads/opt/IMG_2896.webp" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 2 — screen 03" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
             </div>
           </div>
+                  <div data-cap="1" style="position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(12px, 1.4vw, 26px) clamp(14px, 1.6vw, 30px); box-sizing: border-box; background: linear-gradient(to top, rgba(24,20,14,0.92) 0%, rgba(24,20,14,0.78) 62%, rgba(24,20,14,0) 100%); color: #f6ecd6; font-family: var(--font-body); font-size: clamp(0.74rem, 1.05vw, 1.02rem); line-height: 1.4; text-wrap: pretty; pointer-events: none;"><span style="display: block; font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.25vw, 1.2rem); letter-spacing: -0.01em; margin-bottom: 0.28em;">Wallet</span>Budgets are easier to follow: less waste, more saved.</div>
         </figure>
-        <figure style="margin: 0; flex: 0 0 auto; height: 100%; min-height: 0; display: flex; align-items: stretch;">
+        <figure data-cap-host="1" style="margin: 0; position: relative; flex: 0 0 auto; height: 100%; min-height: 0; display: flex; align-items: stretch;">
           <div style="height: 100%; display: flex; align-items: flex-start; gap: 0;">
             <div style="position: relative; flex: 0 0 auto; height: calc(100% - clamp(20px, 4.8vh, 68px)); width: auto; aspect-ratio: 9 / 19.5; container-type: inline-size; border-radius: clamp(12px, 1.5vw, 26px); margin-top: clamp(10px, 2.4vh, 34px); margin-right: calc(-1 * clamp(10px, 1.6vw, 30px)); z-index: 0; overflow: hidden;">
-              <image-slot id="app-3-a" fit="contain" src="uploads/IMG_2904.PNG" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 3 — screen 01" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+              <image-slot id="app-3-a" fit="contain" src="uploads/opt/IMG_2904.webp" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 3 — screen 01" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
             </div>
             <div style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 9 / 19.5; container-type: inline-size; border-radius: clamp(12px, 1.5vw, 26px); margin-top: 0px; margin-right: calc(-1 * clamp(10px, 1.6vw, 30px)); z-index: 1; overflow: hidden;">
-              <image-slot id="app-3-b" fit="contain" src="uploads/IMG_2916.PNG" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 3 — screen 02" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+              <image-slot id="app-3-b" fit="contain" src="uploads/opt/IMG_2916.webp" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 3 — screen 02" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
               <svg viewBox="0 0 200 34" preserveAspectRatio="none" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 42%; height: 3.8%; min-height: 9px; pointer-events: none; z-index: 2; display: block;"><path d="M0,0 C6,0 8,2 8,8 V13 C8,24 17,34 29,34 H171 C183,34 192,24 192,13 V8 C192,2 194,0 200,0 Z" fill="#0b0b0c"></path></svg>
               <div style="position: absolute; top: 0; left: 0; right: 0; height: 12cqw; display: flex; align-items: center; justify-content: space-between; padding: 0 7cqw 0 9cqw; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 600; font-size: 5.2cqw; letter-spacing: 0.01em; pointer-events: none; z-index: 3;">
                 <span>9:41</span>
@@ -812,46 +920,49 @@
               </div>
             </div>
             <div style="position: relative; flex: 0 0 auto; height: calc(100% - clamp(20px, 4.8vh, 68px)); width: auto; aspect-ratio: 9 / 19.5; container-type: inline-size; border-radius: clamp(12px, 1.5vw, 26px); margin-top: clamp(10px, 2.4vh, 34px); margin-right: calc(-1 * clamp(10px, 1.6vw, 30px)); z-index: 0; overflow: hidden;">
-              <image-slot id="app-3-c" fit="contain" src="uploads/IMG_2903.PNG" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 3 — screen 03" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+              <image-slot id="app-3-c" fit="contain" src="uploads/opt/IMG_2903.webp" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 3 — screen 03" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
             </div>
           </div>
+                  <div data-cap="1" style="position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(12px, 1.4vw, 26px) clamp(14px, 1.6vw, 30px); box-sizing: border-box; background: linear-gradient(to top, rgba(24,20,14,0.92) 0%, rgba(24,20,14,0.78) 62%, rgba(24,20,14,0) 100%); color: #f6ecd6; font-family: var(--font-body); font-size: clamp(0.74rem, 1.05vw, 1.02rem); line-height: 1.4; text-wrap: pretty; pointer-events: none;"><span style="display: block; font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.25vw, 1.2rem); letter-spacing: -0.01em; margin-bottom: 0.28em;">CookMate</span>Home cooking made simple, with recipes, prep videos and AI support.</div>
         </figure>
-        <figure style="margin: 0; flex: 0 0 auto; height: 100%; min-height: 0; display: flex; align-items: stretch;">
+        <figure data-cap-host="1" style="margin: 0; position: relative; flex: 0 0 auto; height: 100%; min-height: 0; display: flex; align-items: stretch;">
           <div style="height: 100%; display: flex; align-items: flex-start; gap: 0;">
             <div style="position: relative; flex: 0 0 auto; height: calc(100% - clamp(20px, 4.8vh, 68px)); width: auto; aspect-ratio: 9 / 19.5; container-type: inline-size; border-radius: clamp(12px, 1.5vw, 26px); margin-top: clamp(10px, 2.4vh, 34px); margin-right: calc(-1 * clamp(10px, 1.6vw, 30px)); z-index: 0; overflow: hidden;">
-              <image-slot id="app-1b-a" fit="contain" mask="inset(0 round clamp(12px, 1.5vw, 26px))" src="uploads/IMG_2891.PNG" placeholder="App 1 — screen 01" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+              <image-slot id="app-1b-a" fit="contain" mask="inset(0 round clamp(12px, 1.5vw, 26px))" src="uploads/opt/IMG_2891.webp" placeholder="App 1 — screen 01" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
               <svg viewBox="0 0 200 34" preserveAspectRatio="none" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 42%; height: 3.8%; min-height: 9px; pointer-events: none; z-index: 2; display: block;"><path d="M0,0 C6,0 8,2 8,8 V13 C8,24 17,34 29,34 H171 C183,34 192,24 192,13 V8 C192,2 194,0 200,0 Z" fill="#0b0b0c"></path></svg>
             </div>
             <div style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 9 / 19.5; container-type: inline-size; border-radius: clamp(12px, 1.5vw, 26px); margin-top: 0px; margin-right: calc(-1 * clamp(10px, 1.6vw, 30px)); z-index: 1; overflow: hidden;">
-              <image-slot id="app-1b-b" fit="contain" mask="inset(0 round clamp(12px, 1.5vw, 26px))" src="uploads/IMG_2888.PNG" placeholder="App 1 — screen 02" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+              <image-slot id="app-1b-b" fit="contain" mask="inset(0 round clamp(12px, 1.5vw, 26px))" src="uploads/opt/IMG_2888.webp" placeholder="App 1 — screen 02" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
               <svg viewBox="0 0 200 34" preserveAspectRatio="none" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 42%; height: 3.8%; min-height: 9px; pointer-events: none; z-index: 2; display: block;"><path d="M0,0 C6,0 8,2 8,8 V13 C8,24 17,34 29,34 H171 C183,34 192,24 192,13 V8 C192,2 194,0 200,0 Z" fill="#0b0b0c"></path></svg>
             </div>
             <div style="position: relative; flex: 0 0 auto; height: calc(100% - clamp(20px, 4.8vh, 68px)); width: auto; aspect-ratio: 9 / 19.5; container-type: inline-size; border-radius: clamp(12px, 1.5vw, 26px); margin-top: clamp(10px, 2.4vh, 34px); margin-right: calc(-1 * clamp(10px, 1.6vw, 30px)); z-index: 0; overflow: hidden;">
-              <image-slot id="app-1b-c" fit="contain" mask="inset(0 round clamp(12px, 1.5vw, 26px))" src="uploads/IMG_2892.PNG" placeholder="App 1 — screen 03" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+              <image-slot id="app-1b-c" fit="contain" mask="inset(0 round clamp(12px, 1.5vw, 26px))" src="uploads/opt/IMG_2892.webp" placeholder="App 1 — screen 03" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
               <svg viewBox="0 0 200 34" preserveAspectRatio="none" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 42%; height: 3.8%; min-height: 9px; pointer-events: none; z-index: 2; display: block;"><path d="M0,0 C6,0 8,2 8,8 V13 C8,24 17,34 29,34 H171 C183,34 192,24 192,13 V8 C192,2 194,0 200,0 Z" fill="#0b0b0c"></path></svg>
             </div>
           </div>
+                  <div data-cap="1" style="position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(12px, 1.4vw, 26px) clamp(14px, 1.6vw, 30px); box-sizing: border-box; background: linear-gradient(to top, rgba(24,20,14,0.92) 0%, rgba(24,20,14,0.78) 62%, rgba(24,20,14,0) 100%); color: #f6ecd6; font-family: var(--font-body); font-size: clamp(0.74rem, 1.05vw, 1.02rem); line-height: 1.4; text-wrap: pretty; pointer-events: none;"><span style="display: block; font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.25vw, 1.2rem); letter-spacing: -0.01em; margin-bottom: 0.28em;">FaithMatch</span>People meet others with the same values, so the relationship starts on firmer ground.</div>
         </figure>
-        <figure style="margin: 0; flex: 0 0 auto; height: 100%; min-height: 0; display: flex; align-items: stretch;">
+        <figure data-cap-host="1" style="margin: 0; position: relative; flex: 0 0 auto; height: 100%; min-height: 0; display: flex; align-items: stretch;">
           <div style="height: 100%; display: flex; align-items: flex-start; gap: 0;">
             <div style="position: relative; flex: 0 0 auto; height: calc(100% - clamp(20px, 4.8vh, 68px)); width: auto; aspect-ratio: 9 / 19.5; container-type: inline-size; border-radius: clamp(12px, 1.5vw, 26px); margin-top: clamp(10px, 2.4vh, 34px); margin-right: calc(-1 * clamp(10px, 1.6vw, 30px)); z-index: 0; overflow: hidden;">
-              <image-slot id="app-2b-a" fit="contain" src="uploads/IMG_2895.PNG" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 2 — screen 01" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+              <image-slot id="app-2b-a" fit="contain" src="uploads/opt/IMG_2895.webp" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 2 — screen 01" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
             </div>
             <div style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 9 / 19.5; container-type: inline-size; border-radius: clamp(12px, 1.5vw, 26px); margin-top: 0px; margin-right: calc(-1 * clamp(10px, 1.6vw, 30px)); z-index: 1; overflow: hidden;">
-              <image-slot id="app-2b-b" fit="contain" src="uploads/IMG_2894.PNG" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 2 — screen 02" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+              <image-slot id="app-2b-b" fit="contain" src="uploads/opt/IMG_2894.webp" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 2 — screen 02" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
             </div>
             <div style="position: relative; flex: 0 0 auto; height: calc(100% - clamp(20px, 4.8vh, 68px)); width: auto; aspect-ratio: 9 / 19.5; container-type: inline-size; border-radius: clamp(12px, 1.5vw, 26px); margin-top: clamp(10px, 2.4vh, 34px); margin-right: calc(-1 * clamp(10px, 1.6vw, 30px)); z-index: 0; overflow: hidden;">
-              <image-slot id="app-2b-c" fit="contain" src="uploads/IMG_2896.PNG" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 2 — screen 03" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+              <image-slot id="app-2b-c" fit="contain" src="uploads/opt/IMG_2896.webp" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 2 — screen 03" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
             </div>
           </div>
+                  <div data-cap="1" style="position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(12px, 1.4vw, 26px) clamp(14px, 1.6vw, 30px); box-sizing: border-box; background: linear-gradient(to top, rgba(24,20,14,0.92) 0%, rgba(24,20,14,0.78) 62%, rgba(24,20,14,0) 100%); color: #f6ecd6; font-family: var(--font-body); font-size: clamp(0.74rem, 1.05vw, 1.02rem); line-height: 1.4; text-wrap: pretty; pointer-events: none;"><span style="display: block; font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.25vw, 1.2rem); letter-spacing: -0.01em; margin-bottom: 0.28em;">Wallet</span>Budgets are easier to follow: less waste, more saved.</div>
         </figure>
-        <figure style="margin: 0; flex: 0 0 auto; height: 100%; min-height: 0; display: flex; align-items: stretch;">
+        <figure data-cap-host="1" style="margin: 0; position: relative; flex: 0 0 auto; height: 100%; min-height: 0; display: flex; align-items: stretch;">
           <div style="height: 100%; display: flex; align-items: flex-start; gap: 0;">
             <div style="position: relative; flex: 0 0 auto; height: calc(100% - clamp(20px, 4.8vh, 68px)); width: auto; aspect-ratio: 9 / 19.5; container-type: inline-size; border-radius: clamp(12px, 1.5vw, 26px); margin-top: clamp(10px, 2.4vh, 34px); margin-right: calc(-1 * clamp(10px, 1.6vw, 30px)); z-index: 0; overflow: hidden;">
-              <image-slot id="app-3b-a" fit="contain" src="uploads/IMG_2904.PNG" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 3 — screen 01" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+              <image-slot id="app-3b-a" fit="contain" src="uploads/opt/IMG_2904.webp" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 3 — screen 01" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
             </div>
             <div style="position: relative; flex: 0 0 auto; height: 100%; width: auto; aspect-ratio: 9 / 19.5; container-type: inline-size; border-radius: clamp(12px, 1.5vw, 26px); margin-top: 0px; margin-right: calc(-1 * clamp(10px, 1.6vw, 30px)); z-index: 1; overflow: hidden;">
-              <image-slot id="app-3b-b" fit="contain" src="uploads/IMG_2916.PNG" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 3 — screen 02" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+              <image-slot id="app-3b-b" fit="contain" src="uploads/opt/IMG_2916.webp" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 3 — screen 02" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
               <svg viewBox="0 0 200 34" preserveAspectRatio="none" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 42%; height: 3.8%; min-height: 9px; pointer-events: none; z-index: 2; display: block;"><path d="M0,0 C6,0 8,2 8,8 V13 C8,24 17,34 29,34 H171 C183,34 192,24 192,13 V8 C192,2 194,0 200,0 Z" fill="#0b0b0c"></path></svg>
               <div style="position: absolute; top: 0; left: 0; right: 0; height: 12cqw; display: flex; align-items: center; justify-content: space-between; padding: 0 7cqw 0 9cqw; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 600; font-size: 5.2cqw; letter-spacing: 0.01em; pointer-events: none; z-index: 3;">
                 <span>9:41</span>
@@ -863,9 +974,10 @@
               </div>
             </div>
             <div style="position: relative; flex: 0 0 auto; height: calc(100% - clamp(20px, 4.8vh, 68px)); width: auto; aspect-ratio: 9 / 19.5; container-type: inline-size; border-radius: clamp(12px, 1.5vw, 26px); margin-top: clamp(10px, 2.4vh, 34px); margin-right: calc(-1 * clamp(10px, 1.6vw, 30px)); z-index: 0; overflow: hidden;">
-              <image-slot id="app-3b-c" fit="contain" src="uploads/IMG_2903.PNG" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 3 — screen 03" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+              <image-slot id="app-3b-c" fit="contain" src="uploads/opt/IMG_2903.webp" mask="inset(0 round clamp(12px, 1.5vw, 26px))" placeholder="App 3 — screen 03" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
             </div>
           </div>
+                  <div data-cap="1" style="position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(12px, 1.4vw, 26px) clamp(14px, 1.6vw, 30px); box-sizing: border-box; background: linear-gradient(to top, rgba(24,20,14,0.92) 0%, rgba(24,20,14,0.78) 62%, rgba(24,20,14,0) 100%); color: #f6ecd6; font-family: var(--font-body); font-size: clamp(0.74rem, 1.05vw, 1.02rem); line-height: 1.4; text-wrap: pretty; pointer-events: none;"><span style="display: block; font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.25vw, 1.2rem); letter-spacing: -0.01em; margin-bottom: 0.28em;">CookMate</span>Home cooking made simple, with recipes, prep videos and AI support.</div>
         </figure>
       </div>
       <div data-axis="1" style="position: relative; z-index: 1; flex: 0 0 auto; margin: 0 clamp(20px, 4vw, 72px); height: 20px; display: flex; align-items: center; cursor: grab; touch-action: none;">
@@ -874,9 +986,322 @@
         </div>
       </div>
   </section>
+
+  <section id="process" data-screen-label="Process" style="position: relative; width: 100%; min-height: 92vh; box-sizing: border-box; overflow: hidden; background-color: transparent; color: var(--hero-ink, var(--color-text)); font-family: var(--font-body); display: flex; flex-direction: column; justify-content: center; gap: clamp(28px, 3.6vw, 60px); padding: clamp(24px, 3vw, 48px) clamp(20px, 4vw, 72px) clamp(28px, 3.4vw, 56px);">
+    <div data-hero-copy="1" style="position: relative; z-index: 3; display: flex; flex-wrap: wrap; align-items: baseline; gap: clamp(10px, 1.4vw, 26px);">
+      <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.7rem, 1vw, 0.95rem); letter-spacing: 0.2em; text-transform: uppercase; text-shadow: var(--hero-glow, 0 1px 0 rgba(243,242,242,0.85), 0 0 6px rgba(243,242,242,0.7)); color: var(--hero-ink, #5f3a06);">04</span>
+      <h2 style="margin: 0; font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.6rem, 3.4vw, 3.9rem); line-height: 1.02; letter-spacing: -0.02em; text-shadow: var(--hero-glow, 0 1px 0 rgba(243,242,242,0.85), 0 0 6px rgba(243,242,242,0.7)); color: var(--hero-ink, #5f3a06);">Building the comb</h2>
+      <span style="font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-weight: 600; font-size: clamp(1.05rem, 1.6vw, 1.6rem); color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">cell by cell</span>
+    </div>
+    <div data-hero-copy="1" data-process-grid="1" style="position: relative; z-index: 3; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(14px, 2.2vw, 42px); align-content: center; max-width: 112ch;">
+        <figure data-reveal="1" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s cubic-bezier(.2,.7,.3,1) 0.00s, transform 0.6s cubic-bezier(.2,.7,.3,1) 0.00s; margin: 0; display: flex; flex-direction: column; align-items: center;">
+          <div data-step-hex="1" style="position: relative; width: 100%; aspect-ratio: 0.866;">
+            <div style="position: absolute; inset: 0; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); opacity: var(--hx-op, 0.22);"></div>
+            <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+              <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(2.1rem, 4.6vw, 4.4rem); line-height: 1; letter-spacing: -0.04em; color: var(--hero-stepnum, #5f3a06); text-shadow: var(--hero-glow-sm, none);">01</span>
+            </div>
+            <span aria-hidden="true" style="position: absolute; left: 50%; bottom: clamp(-7px, -0.6vw, -5px); transform: translateX(-50%); width: clamp(13px, 1.1vw, 17px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f);"></span>
+          </div>
+          <span style="margin-top: clamp(16px, 1.8vw, 28px); font-family: var(--font-heading); font-weight: 600; font-size: clamp(1rem, 1.46vw, 1.52rem); line-height: 1.1; letter-spacing: -0.014em; text-align: center; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">Call &amp; brief</span>
+          <span style="margin-top: 0.34em; font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-size: clamp(0.72rem, 0.98vw, 1rem); text-align: center; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">30–45 min</span>
+          <p style="margin: clamp(10px, 1.1vw, 16px) 0 0; max-width: 24ch; font-size: clamp(0.8rem, 1.02vw, 1.02rem); line-height: 1.5; text-align: center; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">We talk through what the site has to do, who it is for and what you already have.</p>
+        </figure>
+        <figure data-reveal="1" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s cubic-bezier(.2,.7,.3,1) 0.09s, transform 0.6s cubic-bezier(.2,.7,.3,1) 0.09s; margin: 0; display: flex; flex-direction: column; align-items: center; margin-top: clamp(16px, 3.2vw, 58px);">
+          <div data-step-hex="1" style="position: relative; width: 100%; aspect-ratio: 0.866;">
+            <div style="position: absolute; inset: 0; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); opacity: var(--hx-op, 0.22);"></div>
+            <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+              <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(2.1rem, 4.6vw, 4.4rem); line-height: 1; letter-spacing: -0.04em; color: var(--hero-stepnum, #5f3a06); text-shadow: var(--hero-glow-sm, none);">02</span>
+            </div>
+            <span aria-hidden="true" style="position: absolute; left: 50%; bottom: clamp(-7px, -0.6vw, -5px); transform: translateX(-50%); width: clamp(13px, 1.1vw, 17px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f);"></span>
+          </div>
+          <span style="margin-top: clamp(16px, 1.8vw, 28px); font-family: var(--font-heading); font-weight: 600; font-size: clamp(1rem, 1.46vw, 1.52rem); line-height: 1.1; letter-spacing: -0.014em; text-align: center; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">Design</span>
+          <span style="margin-top: 0.34em; font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-size: clamp(0.72rem, 0.98vw, 1rem); text-align: center; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">in Figma</span>
+          <p style="margin: clamp(10px, 1.1vw, 16px) 0 0; max-width: 24ch; font-size: clamp(0.8rem, 1.02vw, 1.02rem); line-height: 1.5; text-align: center; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">I send a link with the direction. Nothing gets built until you approve it.</p>
+        </figure>
+        <figure data-reveal="1" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s cubic-bezier(.2,.7,.3,1) 0.18s, transform 0.6s cubic-bezier(.2,.7,.3,1) 0.18s; margin: 0; display: flex; flex-direction: column; align-items: center;">
+          <div data-step-hex="1" style="position: relative; width: 100%; aspect-ratio: 0.866;">
+            <div style="position: absolute; inset: 0; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); opacity: var(--hx-op, 0.22);"></div>
+            <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+              <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(2.1rem, 4.6vw, 4.4rem); line-height: 1; letter-spacing: -0.04em; color: var(--hero-stepnum, #5f3a06); text-shadow: var(--hero-glow-sm, none);">03</span>
+            </div>
+            <span aria-hidden="true" style="position: absolute; left: 50%; bottom: clamp(-7px, -0.6vw, -5px); transform: translateX(-50%); width: clamp(13px, 1.1vw, 17px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f);"></span>
+          </div>
+          <span style="margin-top: clamp(16px, 1.8vw, 28px); font-family: var(--font-heading); font-weight: 600; font-size: clamp(1rem, 1.46vw, 1.52rem); line-height: 1.1; letter-spacing: -0.014em; text-align: center; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">Build</span>
+          <span style="margin-top: 0.34em; font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-size: clamp(0.72rem, 0.98vw, 1rem); text-align: center; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">site or app</span>
+          <p style="margin: clamp(10px, 1.1vw, 16px) 0 0; max-width: 24ch; font-size: clamp(0.8rem, 1.02vw, 1.02rem); line-height: 1.5; text-align: center; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">Sites I build myself. Apps are built out with the developer I work with.</p>
+        </figure>
+        <figure data-reveal="1" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s cubic-bezier(.2,.7,.3,1) 0.27s, transform 0.6s cubic-bezier(.2,.7,.3,1) 0.27s; margin: 0; display: flex; flex-direction: column; align-items: center; margin-top: clamp(16px, 3.2vw, 58px);">
+          <div data-step-hex="1" style="position: relative; width: 100%; aspect-ratio: 0.866;">
+            <div style="position: absolute; inset: 0; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); opacity: var(--hx-op, 0.22);"></div>
+            <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+              <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(2.1rem, 4.6vw, 4.4rem); line-height: 1; letter-spacing: -0.04em; color: var(--hero-stepnum, #5f3a06); text-shadow: var(--hero-glow-sm, none);">04</span>
+            </div>
+            <span aria-hidden="true" style="position: absolute; left: 50%; bottom: clamp(-7px, -0.6vw, -5px); transform: translateX(-50%); width: clamp(13px, 1.1vw, 17px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f);"></span>
+          </div>
+          <span style="margin-top: clamp(16px, 1.8vw, 28px); font-family: var(--font-heading); font-weight: 600; font-size: clamp(1rem, 1.46vw, 1.52rem); line-height: 1.1; letter-spacing: -0.014em; text-align: center; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">Launch</span>
+          <span style="margin-top: 0.34em; font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-size: clamp(0.72rem, 0.98vw, 1rem); text-align: center; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">hosting &amp; domain</span>
+          <p style="margin: clamp(10px, 1.1vw, 16px) 0 0; max-width: 24ch; font-size: clamp(0.8rem, 1.02vw, 1.02rem); line-height: 1.5; text-align: center; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">The finished site goes live. You hand over text, photos if you have them, and domain access.</p>
+        </figure>
+    </div>
+  </section>
+  <section id="included" data-screen-label="Included" style="position: relative; width: 100%; min-height: 92vh; box-sizing: border-box; overflow: hidden; background-color: transparent; color: var(--hero-ink, var(--color-text)); font-family: var(--font-body); display: flex; flex-direction: column; justify-content: center; gap: clamp(28px, 3.6vw, 60px); padding: clamp(24px, 3vw, 48px) clamp(20px, 4vw, 72px) clamp(28px, 3.4vw, 56px);">
+    <div data-hero-copy="1" style="position: relative; z-index: 3; display: flex; flex-wrap: wrap; align-items: baseline; gap: clamp(10px, 1.4vw, 26px);">
+      <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.7rem, 1vw, 0.95rem); letter-spacing: 0.2em; text-transform: uppercase; text-shadow: var(--hero-glow, 0 1px 0 rgba(243,242,242,0.85), 0 0 6px rgba(243,242,242,0.7)); color: var(--hero-ink, #5f3a06);">05</span>
+      <h2 style="margin: 0; font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.6rem, 3.4vw, 3.9rem); line-height: 1.02; letter-spacing: -0.02em; text-shadow: var(--hero-glow, 0 1px 0 rgba(243,242,242,0.85), 0 0 6px rgba(243,242,242,0.7)); color: var(--hero-ink, #5f3a06);">What you get</h2>
+      <span style="font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-weight: 600; font-size: clamp(1.05rem, 1.6vw, 1.6rem); color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">two ways of working</span>
+    </div>
+    <div data-hero-copy="1" data-included-grid="1" style="position: relative; z-index: 3; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(28px, 4vw, 80px); align-content: center; max-width: 104ch;">
+        <div data-reveal="1" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s cubic-bezier(.2,.7,.3,1) 0.00s, transform 0.6s cubic-bezier(.2,.7,.3,1) 0.00s; display: flex; flex-direction: column; gap: clamp(14px, 1.6vw, 24px); min-width: 0;">
+          <div style="display: flex; flex-direction: column; align-items: flex-start; gap: clamp(6px, 0.8vw, 12px);">
+            <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.58rem, 0.8vw, 0.8rem); letter-spacing: 0.2em; text-transform: uppercase; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">Websites</span>
+            <span style="display: flex; flex-wrap: wrap; align-items: baseline; gap: clamp(8px, 1vw, 16px);"><span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.25rem, 2.2vw, 2.3rem); line-height: 1.04; letter-spacing: -0.02em; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">The full site</span>
+            <span style="font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-size: clamp(0.8rem, 1.08vw, 1.1rem); color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">live in 24–48h</span></span>
+          </div>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: clamp(9px, 1vw, 14px); max-width: 40ch;">
+            <li style="display: flex; align-items: baseline; gap: clamp(9px, 1vw, 15px); font-size: clamp(0.86rem, 1.1vw, 1.12rem); line-height: 1.45; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">
+              <span aria-hidden="true" style="flex: 0 0 auto; width: clamp(9px, 0.8vw, 12px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); transform: translateY(0.12em);"></span>
+              <span>Pages laid out around what the visitor came to do</span>
+            </li>
+            <li style="display: flex; align-items: baseline; gap: clamp(9px, 1vw, 15px); font-size: clamp(0.86rem, 1.1vw, 1.12rem); line-height: 1.45; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">
+              <span aria-hidden="true" style="flex: 0 0 auto; width: clamp(9px, 0.8vw, 12px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); transform: translateY(0.12em);"></span>
+              <span>Search-ready: titles, descriptions and link previews</span>
+            </li>
+            <li style="display: flex; align-items: baseline; gap: clamp(9px, 1vw, 15px); font-size: clamp(0.86rem, 1.1vw, 1.12rem); line-height: 1.45; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">
+              <span aria-hidden="true" style="flex: 0 0 auto; width: clamp(9px, 0.8vw, 12px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); transform: translateY(0.12em);"></span>
+              <span>Loads fast, reads well on a phone</span>
+            </li>
+            <li style="display: flex; align-items: baseline; gap: clamp(9px, 1vw, 15px); font-size: clamp(0.86rem, 1.1vw, 1.12rem); line-height: 1.45; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">
+              <span aria-hidden="true" style="flex: 0 0 auto; width: clamp(9px, 0.8vw, 12px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); transform: translateY(0.12em);"></span>
+              <span>Built to bring in enquiries, not just to look good</span>
+            </li>
+          </ul>
+          <p style="margin: 0; max-width: 38ch; font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-size: clamp(0.84rem, 1.08vw, 1.1rem); line-height: 1.4; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">Every page written and structured so visitors find what they came for.</p>
+        </div>
+        <div data-reveal="1" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s cubic-bezier(.2,.7,.3,1) 0.10s, transform 0.6s cubic-bezier(.2,.7,.3,1) 0.10s; display: flex; flex-direction: column; gap: clamp(14px, 1.6vw, 24px); min-width: 0;">
+          <div style="display: flex; flex-direction: column; align-items: flex-start; gap: clamp(6px, 0.8vw, 12px);">
+            <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.58rem, 0.8vw, 0.8rem); letter-spacing: 0.2em; text-transform: uppercase; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">Mobile apps</span>
+            <span style="display: flex; flex-wrap: wrap; align-items: baseline; gap: clamp(8px, 1vw, 16px);"><span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.25rem, 2.2vw, 2.3rem); line-height: 1.04; letter-spacing: -0.02em; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">The whole product</span>
+            <span style="font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-size: clamp(0.8rem, 1.08vw, 1.1rem); color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">1–2 months</span></span>
+          </div>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: clamp(9px, 1vw, 14px); max-width: 40ch;">
+            <li style="display: flex; align-items: baseline; gap: clamp(9px, 1vw, 15px); font-size: clamp(0.86rem, 1.1vw, 1.12rem); line-height: 1.45; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">
+              <span aria-hidden="true" style="flex: 0 0 auto; width: clamp(9px, 0.8vw, 12px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); transform: translateY(0.12em);"></span>
+              <span>Every screen designed in Figma</span>
+            </li>
+            <li style="display: flex; align-items: baseline; gap: clamp(9px, 1vw, 15px); font-size: clamp(0.86rem, 1.1vw, 1.12rem); line-height: 1.45; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">
+              <span aria-hidden="true" style="flex: 0 0 auto; width: clamp(9px, 0.8vw, 12px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); transform: translateY(0.12em);"></span>
+              <span>Every state drawn: empty, loading, error</span>
+            </li>
+            <li style="display: flex; align-items: baseline; gap: clamp(9px, 1vw, 15px); font-size: clamp(0.86rem, 1.1vw, 1.12rem); line-height: 1.45; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">
+              <span aria-hidden="true" style="flex: 0 0 auto; width: clamp(9px, 0.8vw, 12px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); transform: translateY(0.12em);"></span>
+              <span>Handed over developer-ready, not just a picture</span>
+            </li>
+            <li style="display: flex; align-items: baseline; gap: clamp(9px, 1vw, 15px); font-size: clamp(0.86rem, 1.1vw, 1.12rem); line-height: 1.45; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">
+              <span aria-hidden="true" style="flex: 0 0 auto; width: clamp(9px, 0.8vw, 12px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); transform: translateY(0.12em);"></span>
+              <span>Flows tested against how people actually use it</span>
+            </li>
+          </ul>
+          <p style="margin: 0; max-width: 38ch; font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-size: clamp(0.84rem, 1.08vw, 1.1rem); line-height: 1.4; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">One package, so nothing stalls between design and code.</p>
+        </div>
+    </div>
+  </section>
+  <section id="faq" data-screen-label="FAQ" style="position: relative; width: 100%; min-height: 92vh; box-sizing: border-box; overflow: hidden; background-color: transparent; color: var(--hero-ink, var(--color-text)); font-family: var(--font-body); display: flex; flex-direction: column; justify-content: center; gap: clamp(26px, 3.4vw, 56px); padding: clamp(24px, 3vw, 48px) clamp(20px, 4vw, 72px) clamp(28px, 3.4vw, 56px);">
+    <div data-hero-copy="1" style="position: relative; z-index: 3; display: flex; flex-wrap: wrap; align-items: baseline; gap: clamp(10px, 1.4vw, 26px);">
+      <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.7rem, 1vw, 0.95rem); letter-spacing: 0.2em; text-transform: uppercase; text-shadow: var(--hero-glow, 0 1px 0 rgba(243,242,242,0.85), 0 0 6px rgba(243,242,242,0.7)); color: var(--hero-ink, #5f3a06);">06</span>
+      <h2 style="margin: 0; font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.6rem, 3.4vw, 3.9rem); line-height: 1.02; letter-spacing: -0.02em; text-shadow: var(--hero-glow, 0 1px 0 rgba(243,242,242,0.85), 0 0 6px rgba(243,242,242,0.7)); color: var(--hero-ink, #5f3a06);">Before you ask</h2>
+      <span style="font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-weight: 600; font-size: clamp(1.05rem, 1.6vw, 1.6rem); color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">the usual questions</span>
+    </div>
+    <div data-hero-copy="1" data-faq-grid="1" style="position: relative; z-index: 3; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(30px, 4.2vw, 72px) clamp(40px, 6vw, 120px); align-content: center; max-width: 112ch;">
+        <div data-reveal="1" style="opacity: 0; transform: translateY(18px); transition: opacity 0.55s cubic-bezier(.2,.7,.3,1) 0.00s, transform 0.55s cubic-bezier(.2,.7,.3,1) 0.00s; display: flex; gap: clamp(11px, 1.2vw, 18px); align-items: flex-start; min-width: 0;">
+          <span aria-hidden="true" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; width: clamp(26px, 2.1vw, 34px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); opacity: var(--hx-op, 0.22); margin-top: 0.1em;"></span>
+          <span style="display: flex; flex-direction: column; gap: clamp(8px, 1vw, 14px); min-width: 0;">
+            <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.94rem, 1.24vw, 1.28rem); line-height: 1.2; letter-spacing: -0.012em; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">What does it cost?</span>
+            <span style="max-width: 40ch; font-size: clamp(0.82rem, 1.02vw, 1.04rem); line-height: 1.62; color: var(--hero-ink, var(--color-text)); opacity: 0.86; text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">After our call, once the scope is clear, I put a price on the project.</span>
+          </span>
+        </div>
+        <div data-reveal="1" style="opacity: 0; transform: translateY(18px); transition: opacity 0.55s cubic-bezier(.2,.7,.3,1) 0.07s, transform 0.55s cubic-bezier(.2,.7,.3,1) 0.07s; display: flex; gap: clamp(11px, 1.2vw, 18px); align-items: flex-start; min-width: 0;">
+          <span aria-hidden="true" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; width: clamp(26px, 2.1vw, 34px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); opacity: var(--hx-op, 0.22); margin-top: 0.1em;"></span>
+          <span style="display: flex; flex-direction: column; gap: clamp(8px, 1vw, 14px); min-width: 0;">
+            <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.94rem, 1.24vw, 1.28rem); line-height: 1.2; letter-spacing: -0.012em; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">How is it paid?</span>
+            <span style="max-width: 40ch; font-size: clamp(0.82rem, 1.02vw, 1.04rem); line-height: 1.62; color: var(--hero-ink, var(--color-text)); opacity: 0.86; text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">In full before work starts.</span>
+          </span>
+        </div>
+        <div data-reveal="1" style="opacity: 0; transform: translateY(18px); transition: opacity 0.55s cubic-bezier(.2,.7,.3,1) 0.14s, transform 0.55s cubic-bezier(.2,.7,.3,1) 0.14s; display: flex; gap: clamp(11px, 1.2vw, 18px); align-items: flex-start; min-width: 0;">
+          <span aria-hidden="true" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; width: clamp(26px, 2.1vw, 34px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); opacity: var(--hx-op, 0.22); margin-top: 0.1em;"></span>
+          <span style="display: flex; flex-direction: column; gap: clamp(8px, 1vw, 14px); min-width: 0;">
+            <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.94rem, 1.24vw, 1.28rem); line-height: 1.2; letter-spacing: -0.012em; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">Who writes the text?</span>
+            <span style="max-width: 40ch; font-size: clamp(0.82rem, 1.02vw, 1.04rem); line-height: 1.62; color: var(--hero-ink, var(--color-text)); opacity: 0.86; text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">Either way works — you send it, or I write it for an added fee.</span>
+          </span>
+        </div>
+        <div data-reveal="1" style="opacity: 0; transform: translateY(18px); transition: opacity 0.55s cubic-bezier(.2,.7,.3,1) 0.21s, transform 0.55s cubic-bezier(.2,.7,.3,1) 0.21s; display: flex; gap: clamp(11px, 1.2vw, 18px); align-items: flex-start; min-width: 0;">
+          <span aria-hidden="true" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; width: clamp(26px, 2.1vw, 34px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); opacity: var(--hx-op, 0.22); margin-top: 0.1em;"></span>
+          <span style="display: flex; flex-direction: column; gap: clamp(8px, 1vw, 14px); min-width: 0;">
+            <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.94rem, 1.24vw, 1.28rem); line-height: 1.2; letter-spacing: -0.012em; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">What about changes later?</span>
+            <span style="max-width: 40ch; font-size: clamp(0.82rem, 1.02vw, 1.04rem); line-height: 1.62; color: var(--hero-ink, var(--color-text)); opacity: 0.86; text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">Changes beyond the agreed scope are possible for an added fee, depending on what you need.</span>
+          </span>
+        </div>
+        <div data-reveal="1" style="opacity: 0; transform: translateY(18px); transition: opacity 0.55s cubic-bezier(.2,.7,.3,1) 0.28s, transform 0.55s cubic-bezier(.2,.7,.3,1) 0.28s; display: flex; gap: clamp(11px, 1.2vw, 18px); align-items: flex-start; min-width: 0;">
+          <span aria-hidden="true" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; width: clamp(26px, 2.1vw, 34px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); opacity: var(--hx-op, 0.22); margin-top: 0.1em;"></span>
+          <span style="display: flex; flex-direction: column; gap: clamp(8px, 1vw, 14px); min-width: 0;">
+            <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.94rem, 1.24vw, 1.28rem); line-height: 1.2; letter-spacing: -0.012em; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">Who owns the site?</span>
+            <span style="max-width: 40ch; font-size: clamp(0.82rem, 1.02vw, 1.04rem); line-height: 1.62; color: var(--hero-ink, var(--color-text)); opacity: 0.86; text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">You do — site, domain and hosting are yours once the project is finished.</span>
+          </span>
+        </div>
+        <div data-reveal="1" style="opacity: 0; transform: translateY(18px); transition: opacity 0.55s cubic-bezier(.2,.7,.3,1) 0.35s, transform 0.55s cubic-bezier(.2,.7,.3,1) 0.35s; display: flex; gap: clamp(11px, 1.2vw, 18px); align-items: flex-start; min-width: 0;">
+          <span aria-hidden="true" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; width: clamp(26px, 2.1vw, 34px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f); opacity: var(--hx-op, 0.22); margin-top: 0.1em;"></span>
+          <span style="display: flex; flex-direction: column; gap: clamp(8px, 1vw, 14px); min-width: 0;">
+            <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.94rem, 1.24vw, 1.28rem); line-height: 1.2; letter-spacing: -0.012em; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">Upkeep after launch?</span>
+            <span style="max-width: 40ch; font-size: clamp(0.82rem, 1.02vw, 1.04rem); line-height: 1.62; color: var(--hero-ink, var(--color-text)); opacity: 0.86; text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">Changes and maintenance are handled by arrangement.</span>
+          </span>
+        </div>
+    </div>
+  </section>
+  <section id="testimonials" data-screen-label="Testimonials" style="position: relative; width: 100%; min-height: 92vh; box-sizing: border-box; overflow: hidden; background-color: transparent; color: var(--hero-ink, var(--color-text)); font-family: var(--font-body); display: flex; flex-direction: column; justify-content: flex-start; gap: clamp(22px, 3vw, 52px); padding: clamp(24px, 3vw, 48px) clamp(20px, 4vw, 72px) clamp(28px, 3.4vw, 56px);">
+    <div data-hero-copy="1" style="position: relative; z-index: 3; display: flex; flex-wrap: wrap; align-items: baseline; gap: clamp(10px, 1.4vw, 26px);">
+      <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.7rem, 1vw, 0.95rem); letter-spacing: 0.2em; text-transform: uppercase; text-shadow: var(--hero-glow, 0 1px 0 rgba(243,242,242,0.85), 0 0 6px rgba(243,242,242,0.7)); color: var(--hero-ink, #5f3a06);">07</span>
+      <h2 style="margin: 0; font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.6rem, 3.4vw, 3.9rem); line-height: 1.02; letter-spacing: -0.02em; text-shadow: var(--hero-glow, 0 1px 0 rgba(243,242,242,0.85), 0 0 6px rgba(243,242,242,0.7)); color: var(--hero-ink, #5f3a06);">The honey</h2>
+      <span style="font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-weight: 600; font-size: clamp(1.05rem, 1.6vw, 1.6rem); color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">what the work left behind</span>
+    </div>
+    <div data-hero-copy="1" style="position: relative; z-index: 3; flex: 1 1 auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 2.4vw, 40px); align-content: center; min-height: 0;">
+        <figure data-reveal="1" style="opacity: 0; transform: translateY(20px); transition: opacity 0.65s cubic-bezier(.2,.7,.3,1), transform 0.65s cubic-bezier(.2,.7,.3,1); margin: 0; position: relative;">
+          <span aria-hidden="true" style="position: absolute; z-index: 2; top: clamp(-11px, -0.9vw, -8px); left: clamp(18px, 2.2vw, 32px); width: clamp(17px, 1.5vw, 23px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f);"></span>
+          <div style="position: relative; height: 100%; box-sizing: border-box; background: var(--hero-paper, #f3f2f2); box-shadow: 0 18px 44px rgba(24,20,14,0.18), 0 2px 0 rgba(184,128,31,0.35); padding: clamp(22px, 2.4vw, 38px) clamp(20px, 2.2vw, 34px) clamp(22px, 2.4vw, 36px); display: flex; flex-direction: column; gap: clamp(14px, 1.6vw, 24px);">
+            <div style="position: absolute; inset: 0; pointer-events: none; border: 1px solid rgba(184,128,31,0.42);"></div>
+            <blockquote style="margin: 0; flex: 1 1 auto; font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-weight: 500; font-size: clamp(1rem, 1.32vw, 1.34rem); line-height: 1.36; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">Elegant, and it put us ahead of the competition on bookings. The site even won site of the month.</blockquote>
+            <figcaption style="display: flex; align-items: center; gap: clamp(11px, 1.2vw, 18px);">
+              <span aria-hidden="true" style="flex: 0 0 auto; width: clamp(42px, 3.6vw, 58px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background-image: url('uploads/opt/p-marko.webp'); background-size: cover; background-position: 50% 50%; background-color: var(--hero-touch, #b8801f);"></span>
+              <span style="display: flex; flex-direction: column; gap: 3px; min-width: 0;">
+                <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.05vw, 1.06rem); letter-spacing: -0.008em; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">Marko Jovanović</span>
+                <span style="font-family: var(--font-body); font-size: clamp(0.58rem, 0.78vw, 0.78rem); letter-spacing: 0.14em; text-transform: uppercase; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">Club owner · Batika Tennis Club</span>
+              </span>
+            </figcaption>
+          </div>
+        </figure>
+        <figure data-reveal="1" style="opacity: 0; transform: translateY(20px); transition: opacity 0.65s cubic-bezier(.2,.7,.3,1), transform 0.65s cubic-bezier(.2,.7,.3,1); margin: 0; position: relative;">
+          <span aria-hidden="true" style="position: absolute; z-index: 2; top: clamp(-11px, -0.9vw, -8px); left: clamp(18px, 2.2vw, 32px); width: clamp(17px, 1.5vw, 23px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f);"></span>
+          <div style="position: relative; height: 100%; box-sizing: border-box; background: var(--hero-paper, #f3f2f2); box-shadow: 0 18px 44px rgba(24,20,14,0.18), 0 2px 0 rgba(184,128,31,0.35); padding: clamp(22px, 2.4vw, 38px) clamp(20px, 2.2vw, 34px) clamp(22px, 2.4vw, 36px); display: flex; flex-direction: column; gap: clamp(14px, 1.6vw, 24px);">
+            <div style="position: absolute; inset: 0; pointer-events: none; border: 1px solid rgba(184,128,31,0.42);"></div>
+            <blockquote style="margin: 0; flex: 1 1 auto; font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-weight: 500; font-size: clamp(1rem, 1.32vw, 1.34rem); line-height: 1.36; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">A far closer relationship with our customers — the before and after transitions are what they talk about.</blockquote>
+            <figcaption style="display: flex; align-items: center; gap: clamp(11px, 1.2vw, 18px);">
+              <span aria-hidden="true" style="flex: 0 0 auto; width: clamp(42px, 3.6vw, 58px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background-image: url('uploads/opt/p-timotije.webp'); background-size: cover; background-position: 50% 50%; background-color: var(--hero-touch, #b8801f);"></span>
+              <span style="display: flex; flex-direction: column; gap: 3px; min-width: 0;">
+                <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.05vw, 1.06rem); letter-spacing: -0.008em; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">Timotije Josilović</span>
+                <span style="font-family: var(--font-body); font-size: clamp(0.58rem, 0.78vw, 0.78rem); letter-spacing: 0.14em; text-transform: uppercase; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">Garage owner · Team Vulkanizer TJ</span>
+              </span>
+            </figcaption>
+          </div>
+        </figure>
+        <figure data-reveal="1" style="opacity: 0; transform: translateY(20px); transition: opacity 0.65s cubic-bezier(.2,.7,.3,1), transform 0.65s cubic-bezier(.2,.7,.3,1); margin: 0; position: relative;">
+          <span aria-hidden="true" style="position: absolute; z-index: 2; top: clamp(-11px, -0.9vw, -8px); left: clamp(18px, 2.2vw, 32px); width: clamp(17px, 1.5vw, 23px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f);"></span>
+          <div style="position: relative; height: 100%; box-sizing: border-box; background: var(--hero-paper, #f3f2f2); box-shadow: 0 18px 44px rgba(24,20,14,0.18), 0 2px 0 rgba(184,128,31,0.35); padding: clamp(22px, 2.4vw, 38px) clamp(20px, 2.2vw, 34px) clamp(22px, 2.4vw, 36px); display: flex; flex-direction: column; gap: clamp(14px, 1.6vw, 24px);">
+            <div style="position: absolute; inset: 0; pointer-events: none; border: 1px solid rgba(184,128,31,0.42);"></div>
+            <blockquote style="margin: 0; flex: 1 1 auto; font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-weight: 500; font-size: clamp(1rem, 1.32vw, 1.34rem); line-height: 1.36; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">Demand for the training programme rose by 40% once the site went live.</blockquote>
+            <figcaption style="display: flex; align-items: center; gap: clamp(11px, 1.2vw, 18px);">
+              <span aria-hidden="true" style="flex: 0 0 auto; width: clamp(42px, 3.6vw, 58px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background-image: url('uploads/opt/p-ana.webp'); background-size: cover; background-position: 50% 50%; background-color: var(--hero-touch, #b8801f);"></span>
+              <span style="display: flex; flex-direction: column; gap: 3px; min-width: 0;">
+                <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.05vw, 1.06rem); letter-spacing: -0.008em; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">Ana Petrović</span>
+                <span style="font-family: var(--font-body); font-size: clamp(0.58rem, 0.78vw, 0.78rem); letter-spacing: 0.14em; text-transform: uppercase; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">Physiotherapist · Lokomoto Centar</span>
+              </span>
+            </figcaption>
+          </div>
+        </figure>
+        <figure data-reveal="1" style="opacity: 0; transform: translateY(20px); transition: opacity 0.65s cubic-bezier(.2,.7,.3,1), transform 0.65s cubic-bezier(.2,.7,.3,1); margin: 0; position: relative;">
+          <span aria-hidden="true" style="position: absolute; z-index: 2; top: clamp(-11px, -0.9vw, -8px); left: clamp(18px, 2.2vw, 32px); width: clamp(17px, 1.5vw, 23px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f);"></span>
+          <div style="position: relative; height: 100%; box-sizing: border-box; background: var(--hero-paper, #f3f2f2); box-shadow: 0 18px 44px rgba(24,20,14,0.18), 0 2px 0 rgba(184,128,31,0.35); padding: clamp(22px, 2.4vw, 38px) clamp(20px, 2.2vw, 34px) clamp(22px, 2.4vw, 36px); display: flex; flex-direction: column; gap: clamp(14px, 1.6vw, 24px);">
+            <div style="position: absolute; inset: 0; pointer-events: none; border: 1px solid rgba(184,128,31,0.42);"></div>
+            <blockquote style="margin: 0; flex: 1 1 auto; font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-weight: 500; font-size: clamp(1rem, 1.32vw, 1.34rem); line-height: 1.36; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">People are genuinely connecting here — and they are staying together.</blockquote>
+            <figcaption style="display: flex; align-items: center; gap: clamp(11px, 1.2vw, 18px);">
+              <span aria-hidden="true" style="flex: 0 0 auto; width: clamp(42px, 3.6vw, 58px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background-image: url('uploads/opt/p-ivana.webp'); background-size: cover; background-position: 50% 50%; background-color: var(--hero-touch, #b8801f);"></span>
+              <span style="display: flex; flex-direction: column; gap: 3px; min-width: 0;">
+                <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.05vw, 1.06rem); letter-spacing: -0.008em; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">Ivana Marić</span>
+                <span style="font-family: var(--font-body); font-size: clamp(0.58rem, 0.78vw, 0.78rem); letter-spacing: 0.14em; text-transform: uppercase; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">User · FaithMatch</span>
+              </span>
+            </figcaption>
+          </div>
+        </figure>
+        <figure data-reveal="1" style="opacity: 0; transform: translateY(20px); transition: opacity 0.65s cubic-bezier(.2,.7,.3,1), transform 0.65s cubic-bezier(.2,.7,.3,1); margin: 0; position: relative;">
+          <span aria-hidden="true" style="position: absolute; z-index: 2; top: clamp(-11px, -0.9vw, -8px); left: clamp(18px, 2.2vw, 32px); width: clamp(17px, 1.5vw, 23px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f);"></span>
+          <div style="position: relative; height: 100%; box-sizing: border-box; background: var(--hero-paper, #f3f2f2); box-shadow: 0 18px 44px rgba(24,20,14,0.18), 0 2px 0 rgba(184,128,31,0.35); padding: clamp(22px, 2.4vw, 38px) clamp(20px, 2.2vw, 34px) clamp(22px, 2.4vw, 36px); display: flex; flex-direction: column; gap: clamp(14px, 1.6vw, 24px);">
+            <div style="position: absolute; inset: 0; pointer-events: none; border: 1px solid rgba(184,128,31,0.42);"></div>
+            <blockquote style="margin: 0; flex: 1 1 auto; font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-weight: 500; font-size: clamp(1rem, 1.32vw, 1.34rem); line-height: 1.36; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">Income, spending and budgets in one place. Quick to enter, and easy to read at a glance.</blockquote>
+            <figcaption style="display: flex; align-items: center; gap: clamp(11px, 1.2vw, 18px);">
+              <span aria-hidden="true" style="flex: 0 0 auto; width: clamp(42px, 3.6vw, 58px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background-image: url('uploads/opt/p-stefan.webp'); background-size: cover; background-position: 50% 50%; background-color: var(--hero-touch, #b8801f);"></span>
+              <span style="display: flex; flex-direction: column; gap: 3px; min-width: 0;">
+                <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.05vw, 1.06rem); letter-spacing: -0.008em; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">Stefan Ilić</span>
+                <span style="font-family: var(--font-body); font-size: clamp(0.58rem, 0.78vw, 0.78rem); letter-spacing: 0.14em; text-transform: uppercase; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">User · Wallet</span>
+              </span>
+            </figcaption>
+          </div>
+        </figure>
+        <figure data-reveal="1" style="opacity: 0; transform: translateY(20px); transition: opacity 0.65s cubic-bezier(.2,.7,.3,1), transform 0.65s cubic-bezier(.2,.7,.3,1); margin: 0; position: relative;">
+          <span aria-hidden="true" style="position: absolute; z-index: 2; top: clamp(-11px, -0.9vw, -8px); left: clamp(18px, 2.2vw, 32px); width: clamp(17px, 1.5vw, 23px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f);"></span>
+          <div style="position: relative; height: 100%; box-sizing: border-box; background: var(--hero-paper, #f3f2f2); box-shadow: 0 18px 44px rgba(24,20,14,0.18), 0 2px 0 rgba(184,128,31,0.35); padding: clamp(22px, 2.4vw, 38px) clamp(20px, 2.2vw, 34px) clamp(22px, 2.4vw, 36px); display: flex; flex-direction: column; gap: clamp(14px, 1.6vw, 24px);">
+            <div style="position: absolute; inset: 0; pointer-events: none; border: 1px solid rgba(184,128,31,0.42);"></div>
+            <blockquote style="margin: 0; flex: 1 1 auto; font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-weight: 500; font-size: clamp(1rem, 1.32vw, 1.34rem); line-height: 1.36; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none); text-wrap: pretty;">Filter recipes by time, difficulty or what is in the fridge — or let the AI plan the meal.</blockquote>
+            <figcaption style="display: flex; align-items: center; gap: clamp(11px, 1.2vw, 18px);">
+              <span aria-hidden="true" style="flex: 0 0 auto; width: clamp(42px, 3.6vw, 58px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background-image: url('uploads/opt/p-jelena.webp'); background-size: cover; background-position: 50% 50%; background-color: var(--hero-touch, #b8801f);"></span>
+              <span style="display: flex; flex-direction: column; gap: 3px; min-width: 0;">
+                <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.86rem, 1.05vw, 1.06rem); letter-spacing: -0.008em; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">Jelena Kostić</span>
+                <span style="font-family: var(--font-body); font-size: clamp(0.58rem, 0.78vw, 0.78rem); letter-spacing: 0.14em; text-transform: uppercase; color: var(--hero-ink, #5f3a06); text-shadow: var(--hero-glow-sm, none);">User · CookMate</span>
+              </span>
+            </figcaption>
+          </div>
+        </figure>
+    </div>
+  </section>
+  <section id="contact" data-screen-label="Contact" style="position: relative; width: 100%; min-height: 88vh; box-sizing: border-box; overflow: hidden; background-color: transparent; color: var(--hero-ink, var(--color-text)); font-family: var(--font-body); display: flex; flex-direction: column; justify-content: flex-start; gap: clamp(18px, 2.4vw, 40px); padding: clamp(24px, 3vw, 48px) clamp(20px, 4vw, 72px) clamp(28px, 3.4vw, 56px);">
+    
+    <div data-hero-copy="1" style="position: relative; z-index: 3; display: flex; flex-direction: column; gap: clamp(18px, 2.4vw, 40px); flex: 1 1 auto;">
+    <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: clamp(10px, 1.4vw, 26px);">
+      <span style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.7rem, 1vw, 0.95rem); letter-spacing: 0.2em; text-transform: uppercase; text-shadow: var(--hero-glow, 0 1px 0 rgba(243,242,242,0.85), 0 0 6px rgba(243,242,242,0.7)); color: var(--hero-ink, #5f3a06);">08</span>
+      <h2 style="margin: 0; font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.6rem, 3.4vw, 3.9rem); line-height: 1.02; letter-spacing: -0.02em; text-shadow: var(--hero-glow, 0 1px 0 rgba(243,242,242,0.85), 0 0 6px rgba(243,242,242,0.7)); color: var(--hero-ink, #5f3a06);">Get in touch</h2>
+      
+    </div>
+    <div data-hero-copy="1" style="position: relative; z-index: 3; flex: 1 1 auto; display: flex; align-items: center; justify-content: center; min-height: 0; padding-bottom: clamp(30px, 4vw, 70px);">
+      <div style="position: relative; width: min(640px, 100%);">
+      <span aria-hidden="true" style="position: absolute; z-index: 2; top: clamp(-14px, -1.2vw, -10px); left: clamp(24px, 3.4vw, 56px); width: clamp(22px, 2vw, 30px); aspect-ratio: 0.866; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: var(--hero-touch, #b8801f);"></span>
+      <div data-reveal="1" style="opacity: 0; transform: translateY(20px); transition: opacity 0.65s cubic-bezier(.2,.7,.3,1), transform 0.65s cubic-bezier(.2,.7,.3,1); position: relative; width: 100%; box-sizing: border-box;  background: var(--hero-paper, #f3f2f2); box-shadow: 0 26px 60px rgba(24,20,14,0.22), 0 2px 0 rgba(184,128,31,0.35); padding: clamp(28px, 3.6vw, 60px) clamp(24px, 3.4vw, 56px) clamp(30px, 3.8vw, 62px);">
+        <div style="position: absolute; inset: 0; pointer-events: none;  border: 1px solid rgba(184,128,31,0.42);"></div>
+        <div style="font-family: var(--font-body); font-size: clamp(0.6rem, 0.84vw, 0.82rem); letter-spacing: 0.22em; text-transform: uppercase; color: var(--hero-ink, #5f3a06);">From idea to live site</div>
+        <p style="margin: clamp(14px, 1.6vw, 24px) 0 0; font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.5rem, 3.4vw, 3.2rem); line-height: 1.02; letter-spacing: -0.028em; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow, 0 1px 0 rgba(243,242,242,0.85), 0 0 6px rgba(243,242,242,0.7)); text-wrap: pretty;">I take it from here. You get it <span style="font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-weight: 500; color: var(--hero-touch, #b8801f);">live</span>.</p>
+        <p style="margin: clamp(12px, 1.4vw, 20px) 0 clamp(20px, 2.4vw, 34px); font-size: clamp(0.82rem, 1.05vw, 1.12rem); line-height: 1.4; white-space: nowrap; color: var(--hero-ink, var(--color-text)); text-shadow: var(--hero-glow-sm, none);">One call, and you will know exactly what it takes.</p>
+        <div style="display: flex; justify-content: center;"><button type="button" data-book-open="1" style="appearance: none; border: 0; cursor: pointer; display: inline-flex; align-items: center; gap: clamp(12px, 1.3vw, 22px); padding: clamp(14px, 1.6vw, 22px) clamp(22px, 2.6vw, 40px); background: #8c5c10; color: #ffffff; font-family: var(--font-heading); font-weight: 600; font-size: clamp(1rem, 1.6vw, 1.6rem); letter-spacing: -0.01em; line-height: 1; transition: background 0.25s ease, color 0.25s ease;" style-hover="background: #5f3a06; color: #ffffff;"><span>Book a call</span></button></div>
+      </div>
+      </div>
+    </div>
+    <div data-book="1" role="dialog" aria-modal="true" aria-label="Book a call" style="position: fixed; inset: 0; z-index: 80; display: none; align-items: center; justify-content: center; padding: clamp(14px, 3vw, 48px); background: rgba(24,20,14,0.55); backdrop-filter: blur(3px);">
+      <div style="position: relative; width: min(560px, 100%); max-height: 92vh; overflow: hidden; display: flex; flex-direction: column; box-sizing: border-box; padding: clamp(18px, 2.2vw, 34px); background: var(--hero-paper, #f3f2f2); color: var(--hero-sub, #201e1d); font-family: var(--font-body); box-shadow: 0 30px 70px rgba(24,20,14,0.35);">
+        <button type="button" data-book-close="1" aria-label="Close" style="position: absolute; top: clamp(12px, 1.6vw, 22px); right: clamp(12px, 1.6vw, 22px); appearance: none; border: 0; background: none; cursor: pointer; font-family: var(--font-heading); font-size: 1.5rem; line-height: 1; color: var(--hero-sub, #201e1d);">×</button>
+        <div data-cal-scroll="1" style="flex: 1 1 auto; min-height: 0; overflow: auto;">
+        <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; margin-bottom: clamp(16px, 2vw, 26px);">
+          <h3 style="margin: 0; font-family: var(--font-heading); font-weight: 600; font-size: clamp(1.3rem, 2.4vw, 2.1rem); letter-spacing: -0.02em; color: var(--hero-ink, #5f3a06);">Book a call</h3>
+          <span style="font-family: 'Playfair Display', var(--font-heading); font-style: italic; font-size: clamp(0.9rem, 1.2vw, 1.15rem); color: var(--hero-sub, #201e1d);">30 minutes</span>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: clamp(10px, 1.4vw, 18px);">
+          <button type="button" data-cal-prev="1" aria-label="Previous month" style="appearance: none; border: 0; background: none; cursor: pointer; font-family: var(--font-heading); font-size: 1.1rem; color: var(--hero-ink, #5f3a06);">←</button>
+          <span data-cal-label="1" style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.78rem, 1vw, 1rem); letter-spacing: 0.18em; text-transform: uppercase; color: var(--hero-ink, #5f3a06);"></span>
+          <button type="button" data-cal-next="1" aria-label="Next month" style="appearance: none; border: 0; background: none; cursor: pointer; font-family: var(--font-heading); font-size: 1.1rem; color: var(--hero-ink, #5f3a06);">→</button>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; margin-bottom: 8px; font-family: var(--font-heading); font-size: clamp(0.58rem, 0.78vw, 0.74rem); letter-spacing: 0.14em; text-transform: uppercase; text-align: center; opacity: 0.72;">
+          <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+        </div>
+        <div data-cal-grid="1" style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px;"></div>
+        </div>
+        <div data-cal-slots="1" style="flex: 0 0 auto; display: flex; flex-wrap: wrap; gap: 8px; margin-top: clamp(14px, 1.7vw, 22px);"></div>
+        <a data-cal-confirm="1" href="mailto:filipnote4@gmail.com?subject=Booking%20a%20call" style="display: none; flex: 0 0 auto; margin-top: clamp(10px, 1.2vw, 16px); padding: clamp(11px, 1.3vw, 16px) clamp(16px, 2vw, 26px); background: var(--hero-touch, #b8801f); color: #201e1d; font-family: var(--font-heading); font-weight: 600; font-size: clamp(0.82rem, 1.05vw, 1.05rem); letter-spacing: 0.02em; text-decoration: none; text-align: center;">Confirm by email</a>
+      </div>
+    </div>
+    </div>
+    <div data-hero-copy="1" style="position: absolute; right: clamp(20px, 4vw, 72px); bottom: clamp(18px, 2.4vw, 40px); z-index: 3; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: flex-end; gap: clamp(8px, 1vw, 18px); font-family: var(--font-body); font-size: clamp(0.72rem, 1vw, 0.95rem); color: var(--hero-ink, var(--color-text));">
+      <span style="opacity: 0.78; text-shadow: var(--hero-glow-sm, none);">© 2026 Filip Ćorić</span>
+      <span style="opacity: 0.42;">·</span>
+      <span style="opacity: 0.78; text-shadow: var(--hero-glow-sm, none);">UI/UX Designer &amp; Web Designer</span>
+    </div>
+    <div data-bee-cursor="1" style="position: fixed; left: 0; top: 0; width: clamp(34px, 3.4vw, 54px); height: clamp(34px, 3.4vw, 54px); margin: calc(-1 * clamp(17px, 1.7vw, 27px)) 0 0 calc(-1 * clamp(17px, 1.7vw, 27px)); opacity: 0; transform: translate3d(-200px, -200px, 0) rotate(-14deg); transition: opacity 0.2s ease; pointer-events: none; z-index: 60; filter: drop-shadow(0 3px 5px rgba(32,30,29,0.28));"><svg viewBox="0 0 76 48" style="width: 100%; height: 100%; display: block; overflow: visible;"><g><path d="M47 17 C37 5 18 0 11 6 C6 11 24 19 43 20 Z" fill="#e6edf2" stroke="#4a423d" stroke-width="0.8" style="transform-origin: 47px 19px; animation: bs-wing 0.13s ease-in-out infinite;"></path><path d="M49 19 C41 10 25 6 20 10 C16 14 32 21 46 22 Z" fill="#d9e3ea" stroke="#5a5049" stroke-width="0.7" style="transform-origin: 49px 21px; animation: bs-wing 0.13s ease-in-out infinite; animation-delay: 0.04s;"></path></g><path d="M45 32 L40 44 M51 33 L50 45 M57 31 L60 42" stroke="#2b2320" stroke-width="1.7" stroke-linecap="round"></path><path d="M12 25 C12 17 21 11 31 11 C40 11 46 17 46 25 C46 33 39 39 30 39 C20 39 12 33 12 25 Z" fill="#c2872a"></path><path d="M18 13.5 C15.5 20 15.2 30.5 17.6 36.6 C19 37.4 20.5 38 22.1 38.4 C19.4 32 19.6 20.6 22.4 12.9 C20.9 13 19.4 13.2 18 13.5 Z" fill="#2b2320"></path><path d="M28 11.2 C25.6 18 25.4 31 28 38.9 C29.5 39 31 38.9 32.4 38.6 C29.8 30.8 29.9 18 32.4 11.4 C31 11.2 29.5 11.1 28 11.2 Z" fill="#2b2320"></path><path d="M38.6 13.2 C36.6 19.4 36.4 30.6 38.6 36.6 C39.9 35.8 41 34.8 41.9 33.6 C40.4 28.4 40.5 21.4 42 16.2 C41.1 15 40 13.9 38.6 13.2 Z" fill="#2b2320"></path><path d="M12.4 22 C8 20.4 4 19 1 18.6 C3.4 20.8 7 23.4 11 25.2 Z" fill="#2b2320"></path><ellipse cx="52" cy="25" rx="9" ry="8.4" fill="#6f4d24"></ellipse><g stroke="#8f6a33" stroke-width="1.3" stroke-linecap="round"><path d="M46 18.5 L44.6 16.4"></path><path d="M52 16.6 L52 14.2"></path><path d="M57.6 18.6 L59.2 16.6"></path><path d="M45.4 31 L43.4 32.6"></path><path d="M58 31.2 L60 32.8"></path></g><circle cx="63.5" cy="24" r="6.6" fill="#241d1a"></circle><ellipse cx="66" cy="22.6" rx="2.5" ry="3.1" fill="#4e433c"></ellipse><path d="M66.5 18 C69.5 13.5 72 11 74.5 10 M62.5 17.6 C63.5 13 64.5 10.6 65.5 8.6" stroke="#241d1a" stroke-width="1.6" stroke-linecap="round" fill="none"></path></svg></div>
+  </section>
 </div>
 
-<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#221f1a"/><polygon points="50,26 68,36 68,58 50,68 32,58 32,36" fill="#c2872a"/><text x="50" y="53" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#221f1a">FĆ</text></svg></template>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#221f1a"></rect><polygon points="50,26 68,36 68,58 50,68 32,58 32,36" fill="#c2872a"></polygon><text x="50" y="53" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#221f1a">FĆ</text></svg></template>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;loopSeconds&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:4.2,&quot;min&quot;:2,&quot;max&quot;:9,&quot;step&quot;:0.2,&quot;unit&quot;:&quot;s&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Touch animation&quot;}}">
 class Component extends DCLogic {
@@ -962,14 +1387,17 @@ class Component extends DCLogic {
     };
     const bandPath = () => {
       const hc = document.querySelector('[data-hero-cell="1"]');
-      const secs = Array.from(document.querySelectorAll('section[data-screen-label]'));
+      const order = ['Hero', 'Websites', 'Mobile apps', 'Contact'];
+      const secs = order.map((n) => document.querySelector('section[data-screen-label="' + n + '"]')).filter(Boolean);
       if (!hc || secs.length < 3) return null;
       const gap = parseFloat(getComputedStyle(hc.parentElement).columnGap) || 8;
       const pitchX = hc.getBoundingClientRect().width + gap;
       const rect = (el) => { const r = el.getBoundingClientRect(); return { t: r.top + window.scrollY, b: r.bottom + window.scrollY }; };
       const s1 = rect(secs[0]), s2 = rect(secs[1]), s3 = rect(secs[2]);
       const W = document.documentElement.clientWidth;
-      return { half: pitchX * 3, pts: [[W + pitchX * 2, s1.t - pitchX * 2], [-pitchX * 2, s2.b - pitchX], [W + pitchX * 2, s3.b - pitchX]] };
+      const pts = [[W + pitchX * 2, s1.t - pitchX * 2], [-pitchX * 2, s2.b - pitchX], [W + pitchX * 2, s3.b - pitchX]];
+      if (secs[3]) { const s4 = rect(secs[3]); pts.push([-pitchX * 2, s4.b + pitchX * 2]); }
+      return { half: pitchX * 3, pts };
     };
     let cells = [];
     const hexTile = (pitchX, pitchY, w) => {
@@ -980,6 +1408,14 @@ class Component extends DCLogic {
       const pts = [[0, 0], [pitchX, 0], [0, H], [pitchX, H], [pitchX / 2, pitchY]];
       const svg = "<svg xmlns='http://www.w3.org/2000/svg' width='" + pitchX.toFixed(2) + "' height='" + H.toFixed(2) + "' viewBox='0 0 " + pitchX.toFixed(2) + " " + H.toFixed(2) + "'>" +
         pts.map((p) => "<polygon points='" + hex(p[0], p[1]) + "' fill='#000'/>").join('') + "</svg>";
+      return 'url("data:image/svg+xml;utf8,' + encodeURIComponent(svg) + '")';
+    };
+    const hexRow = (pitchX, cellH, w) => {
+      const h = w / 0.866;
+      const cx = pitchX / 2, cy = cellH / 2;
+      const pts = [[cx, cy - h / 2], [cx + w / 2, cy - h / 4], [cx + w / 2, cy + h / 4], [cx, cy + h / 2], [cx - w / 2, cy + h / 4], [cx - w / 2, cy - h / 4]]
+        .map((p) => p[0].toFixed(2) + ',' + p[1].toFixed(2)).join(' ');
+      const svg = "<svg xmlns='http://www.w3.org/2000/svg' width='" + pitchX.toFixed(2) + "' height='" + cellH.toFixed(2) + "' viewBox='0 0 " + pitchX.toFixed(2) + " " + cellH.toFixed(2) + "'><polygon points='" + pts + "' fill='#000'/></svg>";
       return 'url("data:image/svg+xml;utf8,' + encodeURIComponent(svg) + '")';
     };
     const fitPhoto = () => {
@@ -998,19 +1434,62 @@ class Component extends DCLogic {
       const L = (((px - w / 2) % pitchX) + pitchX) % pitchX;
       [[gapEl, w], [imgEl, Math.max(w - rim * 2, w * 0.3)]].forEach(([el, cw]) => {
         el.style.left = L.toFixed(2) + 'px';
-        const t = hexTile(pitchX, pitchY, cw);
-        el.style.webkitMaskImage = t; el.style.maskImage = t;
-        el.style.webkitMaskRepeat = 'repeat'; el.style.maskRepeat = 'repeat';
-        el.style.webkitMaskSize = pitchX.toFixed(2) + 'px ' + (2 * pitchY).toFixed(2) + 'px';
-        el.style.maskSize = pitchX.toFixed(2) + 'px ' + (2 * pitchY).toFixed(2) + 'px';
-        const mx = (((px - L) % pitchX) + pitchX) % pitchX;
-        el.style.webkitMaskPosition = mx.toFixed(2) + 'px ' + py.toFixed(2) + 'px';
-        el.style.maskPosition = mx.toFixed(2) + 'px ' + py.toFixed(2) + 'px';
+        const cellH = cw / 0.866;
+        const tile = hexRow(pitchX, cellH, cw);
+        const imgs = [], sizes = [], reps = [], poss = [];
+        const rStart = Math.floor((-cellH - py) / pitchY) - 1;
+        const rEnd = Math.ceil((panel.height + cellH - py) / pitchY) + 1;
+        for (let r = rStart; r <= rEnd; r++) {
+          const yc = py + r * pitchY;
+          if (yc + cellH / 2 > panel.height + 0.6) continue;
+          const xc = px + (((r % 2) + 2) % 2 === 1 ? pitchX / 2 : 0) - L;
+          const x0 = (((xc - pitchX / 2) % pitchX) + pitchX) % pitchX;
+          imgs.push(tile);
+          sizes.push(pitchX.toFixed(2) + 'px ' + cellH.toFixed(2) + 'px');
+          reps.push('repeat-x');
+          poss.push(x0.toFixed(2) + 'px ' + (yc - cellH / 2).toFixed(2) + 'px');
+        }
+        if (el === imgEl) {
+          const lowest = poss.reduce((m, p) => Math.max(m, parseFloat(p.split(' ')[1]) + cellH), -Infinity);
+          const off = Math.max(0, panel.height - lowest);
+          el.style.bottom = off.toFixed(2) + 'px';
+          const boxW = el.getBoundingClientRect().width || (panel.width - L);
+          const imgH = Math.min(panel.height - 2 * off, boxW * (1157 / 882));
+          const g = (panel.height - imgH) / 2;
+          el.style.backgroundSize = 'auto ' + imgH.toFixed(2) + 'px';
+          el.style.backgroundPosition = 'right ' + off.toFixed(2) + 'px bottom ' + Math.max(0, g - off).toFixed(2) + 'px';
+        }
+        const setP = (k, v) => { el.style['webkitMask' + k] = v; el.style['mask' + k] = v; };
+        setP('Image', imgs.join(', '));
+        setP('Size', sizes.join(', '));
+        setP('Repeat', reps.join(', '));
+        setP('Position', poss.join(', '));
+      });
+    };
+    const fitCaps = () => {
+      document.querySelectorAll('[data-cap-host="1"]').forEach((host) => {
+        const capEl = host.querySelector('[data-cap="1"]');
+        if (!capEl) return;
+        const phones = host.querySelectorAll('div[style*="aspect-ratio: 9 / 19.5"]');
+        if (phones.length) phones[phones.length - 1].style.marginRight = '0px';
+        const imgs = Array.prototype.slice.call(host.querySelectorAll('image-slot'))
+          .map(function (sl) { return sl.shadowRoot && sl.shadowRoot.querySelector('img'); })
+          .filter(function (im) { return im && im.getBoundingClientRect().width > 1; });
+        if (!imgs.length) return;
+        const hr = host.getBoundingClientRect();
+        const rs = imgs.map(function (im) { return im.getBoundingClientRect(); });
+        const l = Math.min.apply(null, rs.map(function (r) { return r.left; }));
+        const rt = Math.max.apply(null, rs.map(function (r) { return r.right; }));
+        const bt = Math.max.apply(null, rs.map(function (r) { return r.bottom; }));
+        capEl.style.left = (l - hr.left).toFixed(1) + 'px';
+        capEl.style.right = (hr.right - rt).toFixed(1) + 'px';
+        capEl.style.bottom = (hr.bottom - bt).toFixed(1) + 'px';
       });
     };
     const measure = () => {
       cells = [];
       fitPhoto();
+      fitCaps();
       combs().forEach((works) => {
         const wr = works.getBoundingClientRect();
         const comb = works.querySelector('[data-comb="1"]');
@@ -1032,6 +1511,7 @@ class Component extends DCLogic {
           grid.style.top = yOff + 'px';
           grid.style.left = xOff + 'px';
           const rowsNeed = Math.ceil((wr.height - yOff) / pitchY) + 2;
+          while (grid.children.length < rowsNeed) grid.appendChild(grid.children[grid.children.length - 1].cloneNode(true));
           const colsNeed = Math.ceil((wr.width - xOff) / pitchX) + 2;
           comb.style.webkitMaskImage = '';
           comb.style.maskImage = '';
@@ -1058,89 +1538,100 @@ class Component extends DCLogic {
           const r = g.parentElement.getBoundingClientRect();
           return { l: r.left + window.scrollX, r: r.right + window.scrollX, t: r.top + window.scrollY, b: r.bottom + window.scrollY };
         })();
+        const hexCells = [];
         const lines = (() => {
-          const c = works.querySelector('[data-hero-copy="1"]');
-          if (!c) return null;
-          const out = [];
-          const walk = document.createTreeWalker(c, NodeFilter.SHOW_TEXT);
-          let n;
-          while ((n = walk.nextNode())) {
-            if (!n.nodeValue || !n.nodeValue.trim()) continue;
-            const rg = document.createRange();
-            rg.selectNodeContents(n);
-            Array.from(rg.getClientRects()).forEach((r) => {
-              if (r.width < 2 || r.height < 2) return;
-              out.push({ l: r.left + window.scrollX, r: r.right + window.scrollX, t: r.top + window.scrollY, b: r.bottom + window.scrollY });
-            });
-          }
+          const out = hexCells.slice();
+          works.querySelectorAll('[data-faq-grid="1"]').forEach((g) => {
+            const r = g.getBoundingClientRect();
+            if (r.width < 2) return;
+            out.push({ l: r.left + window.scrollX, r: r.right + window.scrollX, t: r.top + window.scrollY, b: r.bottom + window.scrollY });
+          });
+          works.querySelectorAll('[data-step-hex="1"]').forEach((h) => {
+            const r = h.getBoundingClientRect();
+            if (r.width < 2) return;
+            out.push({ l: r.left + window.scrollX, r: r.right + window.scrollX, t: r.top + window.scrollY, b: r.bottom + window.scrollY });
+          });
+          works.querySelectorAll('[data-hero-copy="1"]').forEach((c) => {
+            const walk = document.createTreeWalker(c, NodeFilter.SHOW_TEXT);
+            let n;
+            while ((n = walk.nextNode())) {
+              if (!n.nodeValue || !n.nodeValue.trim()) continue;
+              const rg = document.createRange();
+              rg.selectNodeContents(n);
+              Array.from(rg.getClientRects()).forEach((r) => {
+                if (r.width < 2 || r.height < 2) return;
+                out.push({ l: r.left + window.scrollX, r: r.right + window.scrollX, t: r.top + window.scrollY, b: r.bottom + window.scrollY });
+              });
+            }
+          });
           return out.length ? out : null;
         })();
+        const footSec = document.querySelector('section[data-screen-label="Contact"]');
+        const footTop = footSec ? footSec.getBoundingClientRect().top + window.scrollY : Infinity;
         works.querySelectorAll('[data-hx="1"]').forEach((el) => {
           if (el.style.display === 'none' || (el.parentElement && el.parentElement.style.display === 'none')) return;
           const r = el.getBoundingClientRect();
           const cx0 = r.left + window.scrollX + r.width / 2, cy0 = r.top + window.scrollY + r.height / 2;
-          const inPanel0 = pnl && cx0 > pnl.l - 4 && cx0 < pnl.r + 4 && cy0 > pnl.t - 4 && cy0 < pnl.b + 4;
+          const inPanel0 = pnl && cx0 > pnl.l - 4 && cx0 < pnl.r + r.width && cy0 > pnl.t - 4 && cy0 < pnl.b + 4;
           if (lines && !inPanel0) {
-            const gx = r.width * 0.44, gy = r.height * 0.34;
+            const gx = r.width * 0.62, gy = r.height * 0.78;
             const over = lines.some((L2) => cx0 > L2.l - gx && cx0 < L2.r + gx && cy0 > L2.t - gy && cy0 < L2.b + gy);
-            el.dataset.noshow = over ? '1' : '';
             if (over) { el.style.visibility = 'hidden'; return; }
-          } else {
-            el.dataset.noshow = '';
           }
-          if (band) {
-            const px = cx0, py = cy0;
-            const inPanel = inPanel0;
-            if (!inPanel && distToPath(px, py, band.pts) > band.half) { el.style.visibility = 'hidden'; return; }
-            el.style.visibility = 'visible';
-          }
-          cells.push({ el, x: r.left + r.width / 2 - wr.left, y: r.top + r.height / 2 - wr.top, works, lifted: false });
-        });
-        const shown = (e) => e && e.style.display !== 'none' && e.style.visibility !== 'hidden';
-        works.querySelectorAll('[data-hx="1"]').forEach((el) => {
-          if (el.style.visibility !== 'hidden' || el.style.display === 'none' || el.dataset.noshow === '1') return;
-          const p = el.previousElementSibling, n = el.nextElementSibling;
-          if (shown(p) && shown(n)) {
-            el.style.visibility = 'visible';
-            const r = el.getBoundingClientRect();
-            cells.push({ el, x: r.left + r.width / 2 - wr.left, y: r.top + r.height / 2 - wr.top, works, lifted: false });
-          }
+          if (band && !inPanel0 && distToPath(cx0, cy0, band.pts) > band.half) { el.style.visibility = 'hidden'; return; }
+          el.style.display = 'block';
+          el.style.visibility = 'visible';
+          el.style.setProperty('opacity', 'var(--hx-op, 0.22)');
+          cells.push({ el: el, x: cx0, y: cy0, works: works, lifted: false });
         });
       });
     };
-    const R = 190;
-    const baseOp = () => parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--hx-op')) || 0.22;
-    const lift = (works, mx, my) => {
+
+    const baseOp = () => {
+      const v = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--hx-op'));
+      return isNaN(v) ? 0.22 : v;
+    };
+    const liftAt = (works, mx, my) => {
+      const R = 170;
       const b0 = baseOp();
       cells.forEach((c) => {
-        if (c.works !== works) { if (c.lifted) { c.el.style.removeProperty('transform'); c.el.style.removeProperty('opacity'); c.lifted = false; } return; }
+        if (c.works !== works) { if (c.lifted) { c.el.style.removeProperty('transform'); c.el.style.setProperty('opacity', 'var(--hx-op, 0.22)'); c.lifted = false; } return; }
         const d = Math.hypot(c.x - mx, c.y - my);
         if (d < R) {
-          const f = 1 - d / R;
-          c.el.style.transform = 'translateY(' + (-16 * f).toFixed(1) + 'px) scale(' + (1 + 0.09 * f).toFixed(3) + ')';
-          c.el.style.opacity = Math.min(1, b0 + 0.4 * f).toFixed(3);
+          const fq = 1 - d / R;
+          c.el.style.transform = 'translateY(' + (-16 * fq).toFixed(1) + 'px) scale(' + (1 + 0.09 * fq).toFixed(3) + ')';
+          c.el.style.opacity = Math.min(1, b0 + 0.4 * fq).toFixed(3);
           c.lifted = true;
         } else if (c.lifted) {
           c.el.style.removeProperty('transform');
-          c.el.style.removeProperty('opacity');
+          c.el.style.setProperty('opacity', 'var(--hx-op, 0.22)');
           c.lifted = false;
         }
       });
     };
-    this._onMove = (ev) => {
-      const works = ev.currentTarget;
-      const r = works.getBoundingClientRect();
-      lift(works, ev.clientX - r.left, ev.clientY - r.top);
+    this._onMove = (ev) => liftAt(ev.currentTarget, ev.clientX + window.scrollX, ev.clientY + window.scrollY);
+    this._onLeave = () => {
+      cells.forEach((c) => { if (c.lifted) { c.el.style.removeProperty('transform'); c.el.style.setProperty('opacity', 'var(--hx-op, 0.22)'); c.lifted = false; } });
     };
-    this._onLeave = () => { cells.forEach((c) => { if (c.lifted) { c.el.style.removeProperty('transform'); c.el.style.removeProperty('opacity'); c.lifted = false; } }); };
-    setTimeout(() => {
-      measure();
-      combs().forEach((w) => {
-        w.addEventListener('pointermove', this._onMove);
-        w.addEventListener('pointerleave', this._onLeave);
-      });
-    }, 60);
     this._measure = measure;
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'none';
+        io.unobserve(e.target);
+        clearTimeout(this._revT);
+        this._revT = setTimeout(() => this._measure && this._measure(), 820);
+      });
+    }, { threshold: 0.2, rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('[data-reveal="1"]').forEach((el, i) => { el.style.transitionDelay = (i * 90) + 'ms'; io.observe(el); });
+    this._io = io;
+
+    this._measure();
+    combs().forEach((w) => {
+      w.addEventListener('pointermove', this._onMove);
+      w.addEventListener('pointerleave', this._onLeave);
+    });
     let queued = false;
     this._onScroll = () => {
       if (queued) return;
@@ -1150,7 +1641,140 @@ class Component extends DCLogic {
     window.addEventListener('scroll', this._onScroll, { passive: true });
     window.addEventListener('resize', this._onScroll);
     window.addEventListener('resize', () => this._measure && this._measure());
+    window.addEventListener('load', () => this._measure && this._measure());
+    [400, 1200, 2500].forEach((ms) => setTimeout(() => this._measure && this._measure(), ms));
+    let bee = { bx: 0, by: 0, tx: 0, ty: 0, raf: 0, live: false };
+    const beeStep = () => {
+      const el = document.querySelector('[data-bee-cursor="1"]');
+      if (!el) { bee.raf = 0; return; }
+      bee.bx += (bee.tx - bee.bx) * 0.22; bee.by += (bee.ty - bee.by) * 0.22;
+      const ang = Math.max(-22, Math.min(22, (bee.tx - bee.bx) * 1.6));
+      document.body.style.setProperty('--bee-x', bee.bx.toFixed(1) + 'px');
+      document.body.style.setProperty('--bee-y', bee.by.toFixed(1) + 'px');
+      document.body.style.setProperty('--bee-r', ang.toFixed(1) + 'deg');
+      bee.raf = bee.live || Math.abs(bee.tx - bee.bx) > 0.4 ? requestAnimationFrame(beeStep) : 0;
+    };
+    this._footMove = (ev) => {
+      if (document.body.hasAttribute('data-book-open')) return;
+      const el = document.querySelector('[data-bee-cursor="1"]');
+      const inFoot = ev.target && ev.target.closest && ev.target.closest('section[data-screen-label="Contact"]');
+      if (!el) return;
+      if (!inFoot) {
+        if (bee.live) { bee.live = false; document.body.removeAttribute('data-bee-on'); }
+        return;
+      }
+      bee.tx = ev.clientX; bee.ty = ev.clientY;
+      if (!bee.live) { bee.live = true; bee.bx = bee.tx; bee.by = bee.ty; document.body.setAttribute('data-bee-on', '1'); }
+      if (!bee.raf) bee.raf = requestAnimationFrame(beeStep);
+    };
+    document.addEventListener('pointermove', this._footMove, { passive: true });
     melt();
+    this._initBooking();
+  }
+  _initBooking() {
+    const modal = document.querySelector('[data-book="1"]');
+    if (!modal || modal._wired) return;
+    modal._wired = true;
+    const grid = modal.querySelector('[data-cal-grid="1"]');
+    const slots = modal.querySelector('[data-cal-slots="1"]');
+    const label = modal.querySelector('[data-cal-label="1"]');
+    const confirm = modal.querySelector('[data-cal-confirm="1"]');
+    const today = new Date(); today.setHours(0, 0, 0, 0);
+    const view = new Date(today.getFullYear(), today.getMonth(), 1);
+    const times = ['10:00', '12:00', '15:00', '17:30'];
+    const state = { day: null, time: null };
+    const hash = (n) => { let h = (n ^ 0x9e3779b9) >>> 0; h = Math.imul(h ^ (h >>> 15), 0x85ebca6b) >>> 0; h = Math.imul(h ^ (h >>> 13), 0xc2b2ae35) >>> 0; return ((h ^ (h >>> 16)) >>> 0) / 4294967296; };
+    const dayKind = (d) => {
+      const dow = d.getDay();
+      if (dow === 0) return 'off';
+      const r = hash(d.getFullYear() * 10000 + d.getMonth() * 100 + d.getDate());
+      if (r < 0.26) return 'full';
+      if (r < 0.46) return 'open';
+      return 'partial';
+    };
+    const taken = (d, i) => {
+      const kind = dayKind(d);
+      if (kind === 'off' || kind === 'full') return true;
+      if (kind === 'open') return false;
+      return hash((d.getFullYear() * 10000 + d.getMonth() * 100 + d.getDate()) * 7 + i * 131) < 0.55;
+    };
+    const fmt = (d) => d.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+
+    const cellStyle = (on) => 'appearance: none; border: 0; padding: 7px 2px 6px; cursor: ' + (on ? 'pointer' : 'default') +
+      '; font-family: var(--font-heading); line-height: 1.15; text-align: center; background: ' + (on ? 'rgba(184,128,31,0.14)' : 'transparent') +
+      '; color: var(--hero-sub, #201e1d); opacity: ' + (on ? '1' : '0.32') + ';';
+
+    const drawSlots = () => {
+      slots.textContent = '';
+      confirm.style.display = 'none';
+      if (!state.day) return;
+      const head = document.createElement('div');
+      head.setAttribute('style', 'flex: 1 1 100%; font-family: var(--font-heading); font-weight: 600; font-size: 0.74rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--hero-ink, #5f3a06);');
+      head.textContent = fmt(state.day);
+      slots.appendChild(head);
+      times.forEach((t, i) => {
+        const free = !taken(state.day, i);
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.disabled = !free;
+        b.textContent = free ? t : t;
+        b.setAttribute('style', 'appearance: none; border: 1px solid ' + (free ? 'rgba(184,128,31,0.55)' : 'rgba(120,110,100,0.28)') +
+          '; background: ' + (state.time === t ? 'var(--hero-touch, #b8801f)' : 'transparent') +
+          '; color: ' + (state.time === t ? '#201e1d' : 'var(--hero-sub, #201e1d)') +
+          '; opacity: ' + (free ? '1' : '0.36') + '; padding: 9px 14px; font-family: var(--font-heading); font-weight: 600; font-size: 0.92rem; cursor: ' + (free ? 'pointer' : 'not-allowed') + ';');
+        if (!free) { b.title = 'Taken'; }
+        b.addEventListener('click', () => { if (!free) return; state.time = t; drawSlots(); });
+        slots.appendChild(b);
+      });
+      if (state.time) {
+        confirm.style.display = 'block';
+        const subj = encodeURIComponent('Call booking - ' + fmt(state.day) + ' at ' + state.time);
+        const bodyTxt = encodeURIComponent('Hi Filip,\n\nI would like to book a call on ' + fmt(state.day) + ' at ' + state.time + '.\n\nAbout the project:\n');
+        confirm.href = 'mailto:filipnote4@gmail.com?subject=' + subj + '&body=' + bodyTxt;
+      }
+    };
+
+    const draw = () => {
+      grid.textContent = '';
+      label.textContent = view.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+      const first = new Date(view.getFullYear(), view.getMonth(), 1);
+      const lead = (first.getDay() + 6) % 7;
+      const days = new Date(view.getFullYear(), view.getMonth() + 1, 0).getDate();
+      for (let i = 0; i < lead; i++) grid.appendChild(document.createElement('span'));
+      for (let d = 1; d <= days; d++) {
+        const date = new Date(view.getFullYear(), view.getMonth(), d);
+        const past = date < today;
+        const freeCount = times.filter((t, i) => !taken(date, i)).length;
+        const on = !past && freeCount > 0;
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.disabled = !on;
+        b.setAttribute('style', cellStyle(on) + (state.day && state.day.getTime() === date.getTime() ? ' background: var(--hero-touch, #b8801f); color: #201e1d;' : ''));
+        const n = document.createElement('span');
+        n.setAttribute('style', 'display: block; font-weight: 600; font-size: 0.98rem;');
+        n.textContent = String(d);
+        const f = document.createElement('span');
+        f.setAttribute('style', 'display: block; margin-top: 2px; font-size: 0.58rem; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.75;');
+        f.textContent = on ? freeCount + ' free' : (past ? '' : (dayKind(date) === 'off' ? '' : 'full'));
+        b.appendChild(n); b.appendChild(f);
+        b.addEventListener('click', () => { if (!on) return; state.day = date; state.time = null; draw(); drawSlots(); });
+        grid.appendChild(b);
+      }
+    };
+
+    const open = () => { modal.style.display = 'flex'; document.body.setAttribute('data-book-open', '1'); document.body.removeAttribute('data-bee-on'); draw(); drawSlots(); };
+    const close = () => { modal.style.display = 'none'; document.body.removeAttribute('data-book-open'); };
+    document.querySelectorAll('[data-book-open="1"]').forEach((b) => b.addEventListener('click', open));
+    modal.querySelector('[data-book-close="1"]').addEventListener('click', close);
+    modal.addEventListener('click', (e) => { if (e.target === modal) close(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+    modal.querySelector('[data-cal-prev="1"]').addEventListener('click', () => {
+      const min = new Date(today.getFullYear(), today.getMonth(), 1);
+      const nv = new Date(view.getFullYear(), view.getMonth() - 1, 1);
+      if (nv >= min) { view.setMonth(view.getMonth() - 1); draw(); }
+    });
+    modal.querySelector('[data-cal-next="1"]').addEventListener('click', () => { view.setMonth(view.getMonth() + 1); draw(); });
+    draw();
   }
   componentWillUnmount() {
     document.querySelectorAll('[data-strip="1"]').forEach((st) => { if (st._raf) cancelAnimationFrame(st._raf); });
@@ -1170,6 +1794,7 @@ class Component extends DCLogic {
           '--hero-paper': '#221f1a',
           '--hero-ink': '#d59a2b',
           '--hero-touch': '#f4e3bd',
+          '--hero-stepnum': '#201e1d',
           '--hero-sub': '#f6ecd6',
           '--hero-gap': '#b8801f',
           '--hx-fill': '#b8801f',
@@ -1186,7 +1811,7 @@ class Component extends DCLogic {
           else el.style.removeProperty(k);
         });
         document.body.style.background = this.dark ? dark['--hero-paper'] : '';
-        document.querySelectorAll('[data-hx="1"]').forEach((h) => { h.style.removeProperty('opacity'); h.style.removeProperty('transform'); });
+        document.querySelectorAll('[data-hx="1"]').forEach((h) => { h.style.setProperty('opacity', 'var(--hx-op, 0.22)'); h.style.removeProperty('transform'); });
       },
       onPress: (e) => {
         const el = e.currentTarget;
