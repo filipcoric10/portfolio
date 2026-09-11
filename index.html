@@ -1453,17 +1453,17 @@ class Component extends DCLogic {
           const boxW = el.getBoundingClientRect().width || (panel.width - L);
           const RATIO = 1157 / 882, EYE_Y = 0.185, EYE_X = 0.51;
           const P = panel.height, BW = panel.width - L;
-          const maxH = Math.min(P - 2 * off, boxW * RATIO);
+          const maxH = Math.min(P - off * 0.4, boxW * RATIO);
           let best = null;
           for (let shrink = 0; shrink <= Math.min(pitchY * 1.1, maxH * 0.25); shrink += 1) {
             const ih = maxH - shrink, iw = ih / RATIO;
             const rowNear = (P - off - 0.815 * ih - py) / pitchY;
             for (const r of [Math.round(rowNear), Math.floor(rowNear), Math.ceil(rowNear)]) {
               const cellY = py + r * pitchY;
-              const bOff = P - off - cellY - 0.815 * ih;
+              const bOff = P - off - cellY - 0.815 * ih - pitchY * 0.5;
               if (bOff < 0 || bOff > P - off - ih + 0.5) continue;
               const baseX = px - L + ((((r % 2) + 2) % 2 === 1) ? pitchX / 2 : 0);
-              const wantR = (k) => BW - (baseX + k * pitchX) - (1 - EYE_X) * iw;
+              const wantR = (k) => BW - (baseX + k * pitchX) - (1 - EYE_X) * iw + pitchX * 0.5;
               let rOff = null;
               for (let k = -40; k <= 40; k++) {
                 const cand = wantR(k);
@@ -1477,6 +1477,13 @@ class Component extends DCLogic {
             if (best) break;
           }
           if (!best) { const g0 = (P - maxH) / 2; best = { ih: maxH, bOff: Math.max(0, g0 - off), rOff: off }; }
+          const iw2 = best.ih / RATIO;
+          const imgTop = (P - off) - best.bOff - best.ih;
+          const solidTo = imgTop + best.ih * 0.54, fadeTo = imgTop + best.ih * 0.76;
+          imgs.push('linear-gradient(to bottom, #000 0px, #000 ' + solidTo.toFixed(1) + 'px, rgba(0,0,0,0.45) ' + ((solidTo + fadeTo) / 2).toFixed(1) + 'px, rgba(0,0,0,0) ' + fadeTo.toFixed(1) + 'px)');
+          sizes.push('100% ' + (P - off).toFixed(2) + 'px');
+          reps.push('no-repeat');
+          poss.push('0px 0px');
           el.style.backgroundSize = 'auto ' + best.ih.toFixed(2) + 'px';
           el.style.backgroundPosition = 'right ' + best.rOff.toFixed(2) + 'px bottom ' + best.bOff.toFixed(2) + 'px';
         }
