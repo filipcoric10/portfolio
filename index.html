@@ -3,11 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="assets/js/support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
 <title>Filip Ćorić — UI/UX &amp; Web Designer</title>
 <meta name="description" content="UI/UX and web designer. Websites live in 24–48 hours, mobile apps designed end to end. See the work and book a free call.">
 <link rel="canonical" href="https://filipcoric10.github.io/portfolio/">
@@ -25,6 +20,16 @@
 <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 <meta property="og:description" content="Websites live in 24–48 hours. Mobile apps designed end to end.">
 <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<meta property="og:image:secure_url" content="https://filipcoric10.github.io/portfolio/assets/img/og-cover.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta name="twitter:title" content="Filip Ćorić — UI/UX &amp; Web Designer">
+<meta name="twitter:description" content="Websites live in 24–48 hours. Mobile apps designed end to end.">
+<link rel="icon" href="assets/icons/apple-touch-icon.png" type="image/png" sizes="180x180">
+<script src="assets/js/support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap">
@@ -41,13 +46,19 @@
   [data-card]:hover [data-shot="0"] { transform: translateX(-14px); }
   [data-card]:hover [data-shot="1"] { transform: translateY(-14px); }
   [data-card]:hover [data-shot="2"] { transform: translateX(14px); }
+  @media (hover: none) {
+    [data-card][data-inview="1"] [data-shot="0"] { transform: translateX(-14px); }
+    [data-card][data-inview="1"] [data-shot="1"] { transform: translateY(-14px); }
+    [data-card][data-inview="1"] [data-shot="2"] { transform: translateX(14px); }
+  }
   [data-show-sm] { display: none; }
+  #work > article + article { margin-top: clamp(44px, 7vw, 88px); }
   @media (max-width: 1120px) { [data-hide-md] { display: none !important; } }
   @media (max-width: 780px) { [data-visit] { position: static !important; order: 3; justify-self: start; } }
   @media (max-width: 780px) { [data-site-row] { grid-template-columns: minmax(0, 1fr) !important; } [data-site-row] > span:last-child { justify-self: start !important; } }
   #contact a[href^="mailto:"], #contact a[href^="tel:"], #contact a[href*="instagram.com"], header > div a[href="#top"], header a[aria-label*="home"], header a { display: inline-flex; align-items: center; min-height: 44px; }
   #work, #about, #contact { scroll-margin-top: 92px; }
-  @media (max-width: 780px) { #work, #about, #contact { scroll-margin-top: 136px; } }
+  @media (max-width: 780px) { #work, #about, #contact { scroll-margin-top: 88px; } }
   @media (max-width: 780px) { [data-hide-sm] { display: none !important; } [data-show-sm] { display: flex !important; } }
   @media (prefers-reduced-motion: reduce) { [data-shot] { transition: none; } html { scroll-behavior: auto; } }
 </style>
@@ -55,7 +66,7 @@
 <div style="min-height: 100vh; background: #fbfaf8; color: #1b1a18; font-family: 'Geist', system-ui, sans-serif; -webkit-font-smoothing: antialiased;">
 
   <header style="position: sticky; top: 0; z-index: 50; background: rgba(251,250,248,0.86); backdrop-filter: blur(12px);">
-    <div style="max-width: 1240px; margin: 0 auto; padding: 18px clamp(20px, 4vw, 48px); display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 20px;">
+    <div style="max-width: 1240px; margin: 0 auto; padding: max(18px, env(safe-area-inset-top)) clamp(16px, 4vw, 48px) 18px; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 20px;">
       <a href="#top" style="justify-self: start; font-size: 1.05rem; font-weight: 600; letter-spacing: -0.01em; text-decoration: none; color: #1b1a18; white-space: nowrap;">Filip Ćorić</a>
       <nav data-hide-sm="" style="display: flex; align-items: center; gap: 32px; font-size: 0.95rem;">
         <a href="#work" style="text-decoration: none; color: #1b1a18;">Work</a>
@@ -66,13 +77,27 @@
         <span data-hide-sm="" data-hide-md="" style="font-size: 0.92rem; color: #6b6760; white-space: nowrap;">filipnote4@gmail.com</span>
         <button type="button" data-hide-sm="" onClick="{{ copyEmail }}" aria-label="Copy email address" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 10px; border: 1px solid rgba(27,26,24,0.12); background: #ffffff; color: #1b1a18; cursor: pointer; font-size: 1.05rem;" style-hover="border-color: #a8741a;"><i class="{{ copyIcon }}"></i></button>
         <button type="button" onClick="{{ openBooking }}" style="font: inherit; font-size: 0.92rem; font-weight: 500; white-space: nowrap; min-height: 44px; padding: 0 18px; border-radius: 10px; border: 0; background: #1b1a18; color: #fbfaf8; cursor: pointer;" style-hover="background: #3a3631;">No-strings call</button>
+        <button type="button" data-show-sm="" onClick="{{ toggleMenu }}" aria-label="{{ menuLabel }}" aria-expanded="{{ menuOpen }}" aria-controls="site-menu" style="align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 10px; border: 1px solid rgba(27,26,24,0.14); background: #ffffff; color: #1b1a18; cursor: pointer; font-size: 1.3rem;"><i class="{{ menuIcon }}"></i></button>
       </div>
     </div>
-    <nav data-show-sm="" aria-label="Sections" style="max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); border-top: 1px solid rgba(27,26,24,0.1);"><a href="#work" style="flex: 1 1 0; display: flex; align-items: center; justify-content: center; min-height: 44px; text-decoration: none; color: #1b1a18; font-size: 0.95rem; font-weight: 500;">Work</a><a href="#about" style="flex: 1 1 0; display: flex; align-items: center; justify-content: center; min-height: 44px; text-decoration: none; color: #1b1a18; font-size: 0.95rem; font-weight: 500;">About</a><a href="#contact" style="flex: 1 1 0; display: flex; align-items: center; justify-content: center; min-height: 44px; text-decoration: none; color: #1b1a18; font-size: 0.95rem; font-weight: 500;">Contact</a></nav>
+    <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+      <nav id="site-menu" data-show-sm="" aria-label="Menu" style="position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; padding: 4px 16px 24px; background: #fbfaf8; border-top: 1px solid rgba(27,26,24,0.1); box-shadow: 0 24px 40px rgba(27,26,24,0.12);">
+        <a href="#work" onClick="{{ closeMenu }}" style="display: flex; align-items: center; min-height: 56px; border-bottom: 1px solid rgba(27,26,24,0.08); text-decoration: none; color: #1b1a18; font-size: 1.2rem; font-weight: 500; letter-spacing: -0.01em;">Work</a>
+        <a href="#about" onClick="{{ closeMenu }}" style="display: flex; align-items: center; min-height: 56px; border-bottom: 1px solid rgba(27,26,24,0.08); text-decoration: none; color: #1b1a18; font-size: 1.2rem; font-weight: 500; letter-spacing: -0.01em;">About</a>
+        <a href="#contact" onClick="{{ closeMenu }}" style="display: flex; align-items: center; min-height: 56px; border-bottom: 1px solid rgba(27,26,24,0.08); text-decoration: none; color: #1b1a18; font-size: 1.2rem; font-weight: 500; letter-spacing: -0.01em;">Contact</a>
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 18px;">
+          <span style="display: flex; flex-direction: column; gap: 2px; min-width: 0;">
+            <span style="font-family: 'Geist Mono', monospace; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: #6b6760;">Email</span>
+            <span style="font-size: 1rem; color: #1b1a18; overflow-wrap: anywhere;">filipnote4@gmail.com</span>
+          </span>
+          <button type="button" onClick="{{ copyEmail }}" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 10px; border: 1px solid rgba(27,26,24,0.14); background: #ffffff; color: #1b1a18; font: inherit; font-size: 0.92rem; cursor: pointer;"><i class="{{ copyIcon }}"></i>{{ copyLabel }}</button>
+        </div>
+      </nav>
+    </sc-if>
   </header>
 
   <main id="top">
-    <section style="max-width: 1240px; margin: 0 auto; padding: clamp(28px, 5vh, 64px) clamp(20px, 4vw, 48px) clamp(18px, 3vh, 36px); display: flex; flex-direction: column; align-items: flex-start; gap: clamp(16px, 2.2vh, 22px);">
+    <section style="max-width: 1240px; margin: 0 auto; padding: clamp(28px, 5vh, 64px) clamp(16px, 4vw, 48px) clamp(36px, 5vh, 72px); display: flex; flex-direction: column; align-items: flex-start; gap: clamp(16px, 2.2vh, 22px);">
       <span style="display: inline-flex; align-items: center; gap: 10px; font-size: 0.9rem; color: #6b6760;"><span style="width: 8px; height: 8px; border-radius: 999px; background: #2f9e5b; box-shadow: 0 0 0 4px rgba(47,158,91,0.14);"></span>Available for new projects</span>
       <h1 style="margin: 0; max-width: 17ch; font-size: clamp(2.1rem, 5.2vw, 4.6rem); line-height: 1.02; font-weight: 600; letter-spacing: -0.035em; text-wrap: balance;">UI/UX and web design for businesses that need to launch fast.</h1>
       <p style="margin: 0; max-width: 54ch; font-size: clamp(1.05rem, 1.4vw, 1.22rem); line-height: 1.6; color: #55514b; text-wrap: pretty;">I design mobile apps end to end and build websites that go live in 24–48 hours, hosting and domain included. You're on every call along the way, so nothing surprises you at launch.</p>
@@ -88,13 +113,14 @@
       </div>
     </section>
 
-    <section id="work" style="max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px) clamp(80px, 12vh, 160px); display: flex; flex-direction: column; gap: clamp(18px, 2.4vw, 32px);">
+    <section id="work" style="max-width: 1240px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 48px) clamp(96px, 14vh, 168px); display: flex; flex-direction: column; gap: clamp(18px, 2.4vw, 32px);">
       <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px;">
         <h2 style="margin: 0; font-size: clamp(1.6rem, 2.6vw, 2.2rem); font-weight: 600; letter-spacing: -0.025em;">Selected work</h2>
         <span style="font-size: 0.95rem; color: #6b6760;">Three products, designed end to end</span>
       </div>
       <sc-for list="{{ projects }}" as="p" hint-placeholder-count="3">
-        <article data-card="" onClick="{{ p.open }}" style="cursor: {{ p.cursor }}; position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: clamp(20px, 3vw, 48px); align-items: center;">
+        <article data-card="" data-key="{{ p.key }}" data-inview="{{ p.inview }}" style="position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: clamp(20px, 3vw, 48px); align-items: center;">
+          <a href="{{ p.caseUrl }}" target="_blank" rel="noopener" aria-label="{{ p.caseLabel }}" style="position: absolute; inset: 0; z-index: 3; border-radius: 22px; -webkit-tap-highlight-color: rgba(168,116,26,0.12);"></a>
           <span data-visit="" style="position: absolute; top: 18px; right: 0; font-size: 0.92rem; color: #6b6760; white-space: nowrap;">Visit site ↗</span>
           <div style="order: 2; display: flex; flex-direction: column; gap: 16px; max-width: 440px;">
             <span style="font-family: 'Geist Mono', monospace; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: #6b6760;">{{ p.kind }}</span>
@@ -111,7 +137,7 @@
       </sc-for>
     </section>
 
-    <section style="max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px) clamp(80px, 12vh, 160px); display: flex; flex-direction: column; gap: 8px;">
+    <section style="max-width: 1240px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 48px) clamp(96px, 14vh, 168px); display: flex; flex-direction: column; gap: 8px;">
       <h2 style="margin: 0 0 18px; font-size: clamp(1.6rem, 2.6vw, 2.2rem); font-weight: 600; letter-spacing: -0.025em;">Live websites</h2>
       <sc-for list="{{ sites }}" as="s" hint-placeholder-count="3">
         <a href="{{ s.url }}" target="_blank" rel="noopener" data-site-row="" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.4fr) auto; align-items: baseline; gap: 6px 24px; padding: 22px 0; border-top: 1px solid rgba(27,26,24,0.1); text-decoration: none; color: #1b1a18;" style-hover="color: #a8741a;">
@@ -123,7 +149,7 @@
     </section>
 
     <section style="background: #f3f1ec;">
-      <div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 11vh, 140px) clamp(20px, 4vw, 48px); display: flex; flex-direction: column; gap: clamp(48px, 7vw, 88px);">
+      <div style="max-width: 1240px; margin: 0 auto; padding: clamp(72px, 11vh, 140px) clamp(16px, 4vw, 48px); display: flex; flex-direction: column; gap: clamp(48px, 7vw, 88px);">
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 32px;">
           <sc-for list="{{ stats }}" as="st" hint-placeholder-count="3">
             <div style="display: flex; flex-direction: column; gap: 8px;">
@@ -149,7 +175,7 @@
       </div>
     </section>
 
-    <section id="about" style="max-width: 1240px; margin: 0 auto; padding: clamp(80px, 12vh, 160px) clamp(20px, 4vw, 48px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: clamp(32px, 6vw, 96px); align-items: center;">
+    <section id="about" style="max-width: 1240px; margin: 0 auto; padding: clamp(96px, 14vh, 168px) clamp(16px, 4vw, 48px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: clamp(32px, 6vw, 96px); align-items: center;">
       <div style="position: relative; aspect-ratio: 4 / 5; max-width: 460px; width: 100%; border-radius: 22px; overflow: hidden; background: #efe7d6;">
         <img src="assets/img/portrait.webp" alt="Portrait of Filip Ćorić" loading="lazy" style="position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); height: 94%; width: auto;">
       </div>
@@ -163,7 +189,7 @@
     </section>
 
     <section id="contact" style="background: #1b1a18; color: #fbfaf8;">
-      <div style="max-width: 1240px; margin: 0 auto; padding: clamp(80px, 12vh, 150px) clamp(20px, 4vw, 48px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: clamp(40px, 6vw, 96px); align-items: start;">
+      <div style="max-width: 1240px; margin: 0 auto; padding: clamp(80px, 12vh, 150px) clamp(16px, 4vw, 48px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: clamp(40px, 6vw, 96px); align-items: start;">
         <div style="display: flex; flex-direction: column; gap: 24px;">
           <h2 style="margin: 0; font-size: clamp(2.2rem, 4.4vw, 3.8rem); font-weight: 600; letter-spacing: -0.035em; line-height: 1.02; text-wrap: balance;">Need a website this week, or an app that's finally done?</h2>
           <p style="margin: 0; font-size: 1.1rem; line-height: 1.6; color: rgba(251,250,248,0.72); max-width: 44ch; text-wrap: pretty;">Tell me what you're building. The first call is free and comes with no strings attached.</p>
@@ -183,7 +209,7 @@
   </main>
 
   <footer style="background: #1b1a18; color: rgba(251,250,248,0.56);">
-    <div style="max-width: 1240px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 48px) 36px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 0.88rem; border-top: 1px solid rgba(251,250,248,0.1);">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 28px clamp(16px, 4vw, 48px) 36px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 0.88rem; border-top: 1px solid rgba(251,250,248,0.1);">
       <span>© 2026 Filip Ćorić · UI/UX &amp; Web Designer</span>
       <span>Working remotely, worldwide</span>
     </div>
@@ -195,25 +221,52 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
-  state = { booking: false, copied: false, ready: !!window.PF };
+  state = { booking: false, copied: false, menu: false, inview: {}, ready: !!window.PF };
   componentDidMount() {
     if (!window.PF) { this._r = () => this.setState({ ready: true }); window.addEventListener('pf-ready', this._r); }
+    this._w = setTimeout(() => this.watchCards(), 300);
   }
-  componentWillUnmount() { if (this._r) window.removeEventListener('pf-ready', this._r); clearTimeout(this._t); }
+  watchCards() {
+    if (typeof IntersectionObserver === 'undefined') return;
+    if (!this._io) {
+      this._io = new IntersectionObserver((entries) => {
+        const next = { ...this.state.inview };
+        let changed = false;
+        entries.forEach((e) => {
+          const k = e.target.getAttribute('data-key');
+          const v = e.isIntersecting;
+          if (k && !!next[k] !== v) { next[k] = v; changed = true; }
+        });
+        if (changed) this.setState({ inview: next });
+      }, { threshold: 0.45 });
+      this._seen = new WeakSet();
+    }
+    document.querySelectorAll('[data-card][data-key]').forEach((el) => {
+      if (!this._seen.has(el)) { this._seen.add(el); this._io.observe(el); }
+    });
+  }
+  componentDidUpdate() { this.watchCards(); }
+  componentWillUnmount() {
+    if (this._io) this._io.disconnect(); if (this._r) window.removeEventListener('pf-ready', this._r); clearTimeout(this._t); }
   renderVals() {
     const P = window.PF || { projects: [], sites: [], quotes: [], stats: [] };
     const panels = { easyfly: '#17140f', velo: '#e8edfd', fit: '#e6f2ea' };
     return {
       projects: P.projects.map((p) => ({
         ...p, panel: panels[p.key], tagLine: p.tags.join(' · '),
-        cursor: p.caseUrl ? 'pointer' : 'default',
-        open: p.caseUrl ? () => window.open(p.caseUrl, '_blank', 'noopener') : undefined,
+        inview: this.state.inview[p.key] ? '1' : '0',
+        caseLabel: 'Open the ' + p.name + ' case study',
         c0: p.cover[0], c1: p.cover[1], c2: p.cover[2],
         alt0: p.name + ' app screen', alt1: p.name + ' app screen', alt2: p.name + ' app screen'
       })),
       sites: P.sites, quotes: P.quotes, stats: P.stats,
       booking: this.state.booking,
-      openBooking: () => this.setState({ booking: true }),
+      openBooking: () => this.setState({ booking: true, menu: false }),
+      menuOpen: this.state.menu,
+      menuIcon: this.state.menu ? 'ph ph-x' : 'ph ph-list',
+      menuLabel: this.state.menu ? 'Close menu' : 'Open menu',
+      toggleMenu: () => this.setState((st) => ({ menu: !st.menu })),
+      closeMenu: () => this.setState({ menu: false }),
       closeBooking: () => this.setState({ booking: false }),
       copyIcon: this.state.copied ? 'ph ph-check' : 'ph ph-copy',
       copyLabel: this.state.copied ? 'Copied' : 'Copy email',
